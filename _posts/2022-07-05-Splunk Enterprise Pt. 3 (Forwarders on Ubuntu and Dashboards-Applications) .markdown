@@ -5,7 +5,7 @@ summary: "Finishing up the Splunk Series"
 author: Justin Johnson
 date: '2022-07-05 14:35:23 +0530'
 categories: Splunk
-image: /assets/img/posts/2022-05-16/feat-1.png
+image: assets/img/posts/2022-05-16/feat-1.png
 keywords: Splunk, Ubuntu, Dashboards, SIEM
 permalink: /blog/Splunk-Pt-3/
 

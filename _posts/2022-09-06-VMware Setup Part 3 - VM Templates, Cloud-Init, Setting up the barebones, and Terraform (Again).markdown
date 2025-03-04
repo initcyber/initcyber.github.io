@@ -5,7 +5,7 @@ summary: "VM Templates, Cloud-init, Barebones, terraform, ... (oh my?)"
 author: Justin Johnson
 date: '2022-09-06 14:35:23 +0530'
 categories: vmware
-image: /assets/img/posts/2022-09-06/1.png
+image: assets/img/posts/2022-09-06/1.png
 keywords: vmware
 permalink: /blog/vmware-pt-3-again/
 

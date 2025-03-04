@@ -5,7 +5,7 @@ summary: "Bye bye esxi"
 author: Justin Johnson
 date: '2022-07-16 14:35:23 +0530'
 categories: proxmox
-image: /assets/img/posts/2022-07-16/feat-1.png
+image: assets/img/posts/2022-07-16/feat-1.png
 keywords: proxmox, esxi
 permalink: /blog/proxmox-esxi-byebye/
 

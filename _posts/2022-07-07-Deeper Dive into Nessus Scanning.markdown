@@ -5,7 +5,7 @@ summary: "Jumpstart your cybersecurity career by understanding Nessus deeper"
 author: Justin Johnson
 date: '2022-07-07 14:35:23 +0530'
 categories: Nessus
-image: /assets/img/posts/2022-07-07/feat-1.png
+image: assets/img/posts/2022-07-07/feat-1.png
 keywords: Nessus
 permalink: /blog/Nessus-Deep-Dive/
 

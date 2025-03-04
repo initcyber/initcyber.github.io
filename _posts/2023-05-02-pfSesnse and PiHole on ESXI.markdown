@@ -5,7 +5,7 @@ summary: "Getting all three of these to play nicely"
 author: Justin Johnson
 date: '2023-05-02 14:35:23 +0530'
 categories: PFSense
-image: /assets/img/posts/2023-05-02/1.png
+image: assets/img/posts/2023-05-02/1.png
 keywords: pfsense, pihole, esxi
 permalink: /blog/pfsense-pihole-esxi/
 

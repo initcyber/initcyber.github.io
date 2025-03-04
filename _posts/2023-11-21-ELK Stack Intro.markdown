@@ -6,7 +6,7 @@ author: Justin Johnson
 date: '2023-11-21 18:30:23 +0530'
 categories: ['Intro','ELK', 'SIEM']
 tags: jekyll
-image: /assets/img/posts/2023-11-21/Thumbnail.png
+image: assets/img/posts/2023-11-21/Thumbnail.png
 keywords: ELK, Elastic, SIEM, Logging, Cybersecurity, Intro
 usemathjax: false
 permalink: /blog/elk-stack-intro/

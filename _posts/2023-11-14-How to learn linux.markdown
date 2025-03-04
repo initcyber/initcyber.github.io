@@ -5,7 +5,7 @@ summary: "The rising popularity of this Operating System"
 author: Justin Johnson
 date: '2023-11-14 21:35:23 +0530'
 categories: Linux
-image: /assets/img/authors/profile.png
+image: assets/img/authors/profile.png
 keywords: youtube, learn linux, linux, cybersecurity
 permalink: /blog/how-to-learn-linux/
 

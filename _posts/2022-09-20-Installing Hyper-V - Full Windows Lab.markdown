@@ -5,7 +5,7 @@ summary: "Full Windows Homelab"
 author: Justin Johnson
 date: '2022-09-20 14:35:23 +0530'
 categories: hyperv
-image: /assets/img/posts/2022-09-20/1.png
+image: assets/img/posts/2022-09-20/1.png
 keywords: Hyper-V, Windows, Microsoft
 permalink: /blog/Hyper-v-full-lab/
 

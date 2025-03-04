@@ -5,7 +5,7 @@ summary: "Over-Engineering your Logging systems"
 author: Justin Johnson
 date: '2023-05-16 14:35:23 +0530'
 categories: ['Splunk','SysLog', 'SIEM']
-image: /assets/img/posts/2023-05-16/1.png
+image: assets/img/posts/2023-05-16/1.png
 keywords: Central Logging Server, Splunk Forwarder, SIEM
 permalink: /blog/Central-Logging-Server/
 

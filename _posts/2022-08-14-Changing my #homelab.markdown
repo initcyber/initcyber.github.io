@@ -5,7 +5,7 @@ summary: "Re-do part 3,098"
 author: Justin Johnson
 date: '2022-08-14 14:35:23 +0530'
 categories: Homelab
-image: /assets/img/posts/2022-08-14/feat-1.png
+image: assets/img/posts/2022-08-14/feat-1.png
 keywords: Homelab
 permalink: /blog/homelab-changeup/
 

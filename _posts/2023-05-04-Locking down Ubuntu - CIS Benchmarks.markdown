@@ -5,7 +5,7 @@ summary: "You can do this too in your homelab"
 author: Justin Johnson
 date: '2023-05-04 14:35:23 +0530'
 categories: CIS
-image: /assets/img/posts/2023-05-04/1.png
+image: assets/img/posts/2023-05-04/1.png
 keywords: CIS, Benchmarks
 permalink: /blog/cis-benchmarks-ubuntu/
 

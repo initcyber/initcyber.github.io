@@ -5,7 +5,7 @@ summary: "Logging your Ansible Playbooks"
 author: Justin Johnson
 date: '2023-05-06 14:35:23 +0530'
 categories: ['Logging', 'ansible', 'awx']
-image: /assets/img/posts/2023-05-06/1.png
+image: assets/img/posts/2023-05-06/1.png
 keywords: devlopr jekyll, how to use devlopr, devlopr, how to use devlopr-jekyll, devlopr-jekyll tutorial,best jekyll themes
 permalink: /blog/Ansible-AWX/
 

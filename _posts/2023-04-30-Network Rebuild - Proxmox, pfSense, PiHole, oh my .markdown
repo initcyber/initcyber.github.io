@@ -5,7 +5,7 @@ summary: "Proxmox, pfsense, pihole, oh my"
 author: Justin Johnson
 date: '2023-04-30 14:35:23 +0530'
 categories: proxmox
-image: /assets/img/posts/2023-04-30/feat-1.png
+image: assets/img/posts/2023-04-30/feat-1.png
 keywords: Network Rebuild, Proxmox, pfsense, pihole
 permalink: /blog/network-rebuild-proxmox-pfsense-pihole/
 

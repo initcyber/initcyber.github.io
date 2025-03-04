@@ -5,7 +5,7 @@ summary: "Why a homelab is critical to your success"
 author: Justin Johnson
 date: '2023-11-09 22:35:23 +0530'
 categories: homelab
-image: /assets/img/posts/2023-11-09/1.jpg
+image: assets/img/posts/2023-11-09/1.jpg
 keywords: homelab
 permalink: /blog/starting-a-homelab/
 

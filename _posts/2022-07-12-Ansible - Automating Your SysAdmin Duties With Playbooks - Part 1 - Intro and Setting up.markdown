@@ -5,7 +5,7 @@ summary: "Part 1 - Playbooks"
 author: Justin Johnson
 date: '2022-07-12 14:35:23 +0530'
 categories: Ansible
-image: /assets/img/posts/2022-07-12/feat-1.png
+image: assets/img/posts/2022-07-12/feat-1.png
 keywords: Ansible, Automation, SysAdmin
 permalink: /blog/ansible-automation-pt1/
 

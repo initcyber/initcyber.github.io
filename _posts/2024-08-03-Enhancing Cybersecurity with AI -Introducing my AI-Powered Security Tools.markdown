@@ -6,7 +6,7 @@ author: Justin Johnson
 date: '2024-08-03 06:30:23 +0530'
 categories: ['AI','OpenAI', 'OpenWebUI']
 tags: ai, llm, career
-image: /assets/img/posts/2024-08-03/Thumbnail.png
+image: assets/img/posts/2024-08-03/Thumbnail.png
 keywords: ai, homelab, llm
 usemathjax: false
 permalink: /blog/ai-tools-cybersecurity/

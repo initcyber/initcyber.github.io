@@ -5,7 +5,7 @@ summary: "You need a vuln scanner in your homelab"
 author: Justin Johnson
 date: '2023-11-18 19:35:23 +0530'
 categories: ['VulnScanner','Homelab', 'Cybersecurity']
-image: /assets/img/posts/2023-11-18/feat-1.png
+image: assets/img/posts/2023-11-18/feat-1.png
 keywords: VulnScanner, nessus, homelab
 permalink: /blog/NeedVulnScanner/
 

@@ -5,7 +5,7 @@ summary: "Adding more VM's and organizing your files"
 author: Justin Johnson
 date: '2022-07-19 14:35:23 +0530'
 categories: terraform
-image: /assets/img/posts/2022-07-19/feat-1.png
+image: assets/img/posts/2022-07-19/feat-1.png
 keywords: Terraform, automation
 permalink: /blog/terraform-pt-3/
 

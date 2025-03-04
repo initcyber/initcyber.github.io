@@ -5,7 +5,7 @@ summary: "Unless you have been living under a rock, you know that the Cloud is o
 author: Justin Johnson
 date: '2023-08-10 14:35:23 +0530'
 categories: homelab
-image: /assets/img/posts/2023-08-10/1.png
+image: assets/img/posts/2023-08-10/1.png
 keywords: HomelabUpdate, Hybrid, Cloud
 permalink: /blog/Homelab-Update-Hybrid-Homelab/
 

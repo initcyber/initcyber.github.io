@@ -5,7 +5,7 @@ summary: "Diagrams using Draw.io"
 author: Justin Johnson
 date: '2022-09-05 14:35:23 +0530'
 categories: vmware
-image: /assets/img/posts/2022-09-05/feat-1.png
+image: assets/img/posts/2022-09-05/feat-1.png
 keywords: vmware
 permalink: /blog/vmware-draw-io/
 

@@ -5,7 +5,7 @@ summary: "Continuing on with Splunk Enterprise"
 author: Justin Johnson
 date: '2022-07-04 14:35:23 +0530'
 categories: [Splunk]
-image: /assets/img/posts/2022-07-04/feat-1.png
+image: assets/img/posts/2022-07-04/feat-1.png
 imgdate: 2022-07-04
 ---
 

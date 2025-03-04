@@ -5,7 +5,7 @@ summary: "I actually like this..."
 author: Justin Johnson
 date: '2022-07-15 14:35:23 +0530'
 categories: WSL
-image: /assets/img/posts/2022-07-15/feat-1.png
+image: assets/img/posts/2022-07-15/feat-1.png
 keywords: WSL, WSL2, Windows and Linux
 permalink: /blog/wsl/
 

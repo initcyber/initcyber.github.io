@@ -5,7 +5,7 @@ summary: "To the rescue!"
 author: Justin Johnson
 date: '2023-05-01 14:35:23 +0530'
 categories: Tailscale
-image: /assets/img/posts/2023-05-01/1.png
+image: assets/img/posts/2023-05-01/1.png
 keywords: Tailscale
 permalink: /blog/welcome-to-tailscale/
 

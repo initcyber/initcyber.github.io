@@ -5,7 +5,7 @@ summary: "Ok, back to VMWare"
 author: Justin Johnson
 date: '2022-09-03 14:35:23 +0530'
 categories: Homelab
-image: /assets/img/posts/2022-09-03/1.png
+image: assets/img/posts/2022-09-03/1.png
 keywords: Homelab
 permalink: /blog/homelab-vmware-revamp/
 

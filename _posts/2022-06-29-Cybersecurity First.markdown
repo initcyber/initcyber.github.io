@@ -5,7 +5,7 @@ author: Justin Johnson
 date: '2022-06-29 1:35:23 +0530'
 categories: [first-post]
 tags: [firstpost]
-image: /assets/img/authors/profile.png
+image: assets/img/authors/profile.png
 ---
 
 

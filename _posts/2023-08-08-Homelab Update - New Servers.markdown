@@ -5,7 +5,7 @@ summary: "Over the past few months I've had a lot of different things happen, mo
 author: Justin Johnson
 date: '2023-08-08 14:35:23 +0530'
 categories: Homelab
-image: /assets/img/posts/2023-08-08/1.jpg
+image: assets/img/posts/2023-08-08/1.jpg
 keywords: Homelab, Update, New Servers
 permalink: /blog/Homelab-Update-New-Servers/
 

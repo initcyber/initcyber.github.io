@@ -5,7 +5,7 @@ summary: "As part of the Homelab revamp, I decided it best to completely blow aw
 author: Justin Johnson
 date: '2023-08-09 14:35:23 +0530'
 categories: Homelab
-image: /assets/img/posts/2023-08-09/feat-1.png
+image: assets/img/posts/2023-08-09/feat-1.png
 keywords: HomelabUpdate, OPNSense, Syslog
 permalink: /blog/homelab-update-opnsense-splunk-syslog/
 

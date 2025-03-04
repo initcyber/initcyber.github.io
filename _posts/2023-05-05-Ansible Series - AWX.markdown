@@ -5,7 +5,7 @@ summary: "In today's IT environments, Ansible is widely used as one of many vari
 author: Justin Johnson
 date: '2023-05-05 14:35:23 +0530'
 categories: Ansible
-image: /assets/img/posts/2023-05-05/1.png
+image: assets/img/posts/2023-05-05/1.png
 keywords: Ansible, AWX, Automation
 permalink: /blog/Ansible Series - AWX/
 

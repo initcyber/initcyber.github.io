@@ -5,7 +5,7 @@ summary: "Different things you can use in your homelab"
 author: Justin Johnson
 date: '2022-07-14 14:35:23 +0530'
 categories: Homelab
-image: /assets/img/posts/2022-07-14/feat-1.png
+image: assets/img/posts/2022-07-14/feat-1.png
 keywords: Homelab, Tools
 permalink: /blog/homelab-tools/
 

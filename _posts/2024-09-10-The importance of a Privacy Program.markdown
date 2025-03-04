@@ -4,7 +4,7 @@ title: "The importance of a Privacy Program"
 summary: "Protecting your business and Reputation"
 author: Justin Johnson
 date: '2024-09-10 06:30:23 +1530'
-image: /assets/img/posts/2024-09-10/image.png
+image: assets/img/posts/2024-09-10/image.png
 keywords: privacy, compliance, GAPP
 usemathjax: false
 imgdate: 2024-09-10

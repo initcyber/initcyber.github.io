@@ -5,7 +5,7 @@ summary: "Deeper dive into Ansible"
 author: Justin Johnson
 date: '2022-07-13 14:35:23 +0530'
 categories: Ansible
-image: /assets/img/posts/2022-07-13/feat-1.png
+image: assets/img/posts/2022-07-13/feat-1.png
 keywords: Ansible
 permalink: /blog/ansible-pt-2/
 

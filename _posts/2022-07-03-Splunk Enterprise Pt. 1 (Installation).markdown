@@ -4,7 +4,7 @@ title:  "Splunk Enterprise Pt. 1"
 author: Justin Johnson
 date: '2022-07-03 14:35:23 +0530'
 categories: [Splunk]
-image: /assets/img/posts/2022-07-03/feat-1.png
+image: assets/img/posts/2022-07-03/feat-1.png
 tags: [Splunk]
 ---
 

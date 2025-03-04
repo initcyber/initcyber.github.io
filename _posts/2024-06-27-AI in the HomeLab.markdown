@@ -6,7 +6,7 @@ author: Justin Johnson
 date: '2024-06-27 18:30:23 +0530'
 categories: ['AI','OpenAI', 'OpenWebUI']
 tags: ai, llm, 
-image: /assets/img/posts/2024-06-27/Thumbnail.png
+image: assets/img/posts/2024-06-27/Thumbnail.png
 keywords: ai, homelab, llm, langchain, new
 usemathjax: false
 permalink: /blog/ai-in-the-homelab/

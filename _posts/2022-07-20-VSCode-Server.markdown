@@ -5,7 +5,7 @@ summary: "How to remotely edit code files"
 author: Justin Johnson
 date: '2022-07-20 14:35:23 +0530'
 categories: VSCode
-image: /assets/img/posts/2022-07-20/feat-1.png
+image: assets/img/posts/2022-07-20/feat-1.png
 keywords: VSCode
 permalink: /blog/VSCODE-Server/
 
