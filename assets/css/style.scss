@@ -9,6 +9,8 @@ $black: #1A2433;
 $white: #ffffff;
 $white-offset: #F6F7F9;
 $steel: #56657D;
+$line: #DEE3EA;
+$ink-soft: #56657D;
 
 // Links
 $link-color: $primary;
@@ -101,6 +103,13 @@ $sub-footer-text-color: $white;
 @import "components/feature";
 @import "components/social";
 // @import "components/fonts"; // Uncomment this line to self host font
+
+// New Redesign Components
+@import "components/hero-redesign";
+@import "components/trust-row";
+@import "components/process-section";
+@import "components/services-cards";
+@import "components/credibility-section";
 
 // Pages
 @import "pages/page-home";

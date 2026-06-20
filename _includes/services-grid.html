@@ -1,0 +1,19 @@
+<section class="services-section">
+  <div class="wrap">
+    <div class="section-marker">§ 02 — Services</div>
+    <h2 class="section-title">Core CMMC Services</h2>
+    <p class="section-desc">Four focused services to move you from confusion to compliance confidence.</p>
+
+    <div class="services-grid">
+      {% for service in site.services %}
+      <a href="{{ service.url }}" class="service-card">
+        <div class="service-header">
+          <h3 class="service-title">{{ service.title }}</h3>
+        </div>
+        <p class="service-description">{{ service.content | strip_html | truncatewords: 20 }}</p>
+        <div class="service-link">Learn more →</div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

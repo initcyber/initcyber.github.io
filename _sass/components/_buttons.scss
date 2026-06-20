@@ -23,3 +23,51 @@
     text-decoration: none;
   }
 }
+
+// Modern button styling
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn-primary {
+  background: $secondary;
+  color: $primary;
+  border-color: $secondary;
+
+  &:hover {
+    background: darken($secondary, 10%);
+    border-color: darken($secondary, 10%);
+    color: $primary;
+  }
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.3);
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+  }
+}
+
+.cta-final {
+  background: $primary-dark;
+  color: #fff;
+}

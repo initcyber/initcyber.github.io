@@ -1,0 +1,115 @@
+// Process Section Styling
+.process-section {
+  padding: 72px 0;
+  background: #fff;
+}
+
+.section-marker {
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: $secondary;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  display: block;
+
+  span {
+    color: $ink-soft;
+  }
+}
+
+.section-title {
+  font-family: $font-family-heading;
+  font-size: clamp(27px, 4vw, 36px);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: $primary;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.section-desc {
+  font-size: 16px;
+  color: $ink-soft;
+  max-width: 540px;
+  margin-bottom: 48px;
+  line-height: 1.65;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  position: relative;
+
+  @include media-breakpoint-down(md) {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 19px;
+    left: 8%;
+    right: 8%;
+    height: 2px;
+    background: $line;
+    z-index: 0;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+}
+
+.process-step {
+  position: relative;
+  z-index: 1;
+
+  @include media-breakpoint-up(md) {
+    &:not(:last-child) {
+      padding-right: 28px;
+    }
+  }
+}
+
+.process-num {
+  width: 42px;
+  height: 42px;
+  border: 2px solid $primary;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-weight: 700;
+  font-size: 16px;
+  color: $primary;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $secondary;
+    border-color: $secondary;
+    color: $primary;
+  }
+}
+
+.process-heading {
+  font-family: $font-family-heading;
+  font-size: 18px;
+  font-weight: 600;
+  color: $primary;
+  margin-bottom: 10px;
+}
+
+.process-step p {
+  font-size: 14px;
+  color: $ink-soft;
+  line-height: 1.65;
+}

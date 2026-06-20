@@ -1,0 +1,45 @@
+// Hero Section Styling
+.hero {
+  background: linear-gradient(135deg, $primary 0%, darken($primary, 10%) 100%);
+  color: #fff;
+  padding: 96px 0 72px;
+  position: relative;
+
+  @include media-breakpoint-up(md) {
+    padding: 120px 0 96px;
+  }
+}
+
+.hero-content {
+  max-width: 640px;
+}
+
+.hero-title {
+  font-family: $font-family-heading;
+  font-size: clamp(28px, 5vw, 52px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 36px;
+  max-width: 520px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
