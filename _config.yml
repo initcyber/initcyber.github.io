@@ -1,6 +1,7 @@
 baseurl: '/'
 permalink: pretty
-title: 'Jekyll Serif'
+title: 'Init Cyber - CMMC Compliance Made Simple'
+description: 'CMMC consulting and compliance services for defense contractors. C3PAO certified assessments and expertise.'
 
 logo:
   mobile: "images/logo/logo-mobile.svg"
@@ -10,7 +11,7 @@ logo:
   desktop_height: "32px"
   desktop_width: "120px"
 
-home: 
+home:
   limit_services: 6
 
 collections:
