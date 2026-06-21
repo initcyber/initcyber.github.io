@@ -46,6 +46,14 @@ bodyClass: "page-contact"
             <p>Interactive map coming soon.<br>{{ site.data.contact.address }}</p>
           </div>
         </div>
+        <div class="soc-availability">
+          <h4><i class="fas fa-shield-halved"></i> SOC Availability</h4>
+          <ul>
+            <li><span>Monday &ndash; Friday</span><span>8:00 AM &ndash; 9:00 PM EST</span></li>
+            <li><span>Saturday</span><span>9:00 AM &ndash; 5:00 PM EST</span></li>
+            <li><span>Emergency Response</span><span>24 / 7 / 365</span></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -54,8 +62,8 @@ bodyClass: "page-contact"
 <!-- Quote Form -->
 <section class="contact-form-section">
   <div class="contact-form-inner">
-    <h2 class="section-heading">Request Your Quote</h2>
-    <p class="section-subheading">Please fill out the form below to discuss a quote to meet your needs. We look forward to hearing from you.</p>
+    <h2 class="section-heading">Secure Inquiries</h2>
+    <p class="section-subheading">Submit your details and a compliance architect will respond within one business day.</p>
     <form class="contact-form" action="#" method="post">
       <div class="form-row">
         <div class="form-field">
@@ -63,20 +71,37 @@ bodyClass: "page-contact"
           <input type="text" id="contact-name" name="name" placeholder="Your full name" required />
         </div>
         <div class="form-field">
+          <label for="contact-company">Company Name</label>
+          <input type="text" id="contact-company" name="company" placeholder="Your organization" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
           <label for="contact-email">Email Address</label>
           <input type="email" id="contact-email" name="email" placeholder="your@company.com" required />
         </div>
+        <div class="form-field">
+          <label for="contact-phone">Phone Number</label>
+          <input type="tel" id="contact-phone" name="phone" placeholder="(555) 555-5555" />
+        </div>
       </div>
       <div class="form-field">
-        <label for="contact-phone">Phone Number</label>
-        <input type="tel" id="contact-phone" name="phone" placeholder="(555) 555-5555" />
+        <label for="contact-service">Service Inquiry</label>
+        <select id="contact-service" name="service">
+          <option value="" disabled selected>Select a service area</option>
+          <option value="cmmc">CMMC Certification / Assessment</option>
+          <option value="vuln">Vulnerability Management</option>
+          <option value="vciso">vCISO Advisory</option>
+          <option value="gap">Gap Analysis / SPRS Scoring</option>
+          <option value="other">Other / General Inquiry</option>
+        </select>
       </div>
       <div class="form-field">
-        <label for="contact-message">Message</label>
-        <textarea id="contact-message" name="message" placeholder="Tell us about your CMMC compliance needs..." required></textarea>
+        <label for="contact-message">Project Description</label>
+        <textarea id="contact-message" name="message" placeholder="Tell us about your CMMC compliance needs, current environment, and timeline..." required></textarea>
       </div>
       <div class="form-submit">
-        <button type="submit" class="btn btn-primary">Send Message</button>
+        <button type="submit" class="btn btn-primary">Submit Audit Request</button>
       </div>
     </form>
   </div>
@@ -87,10 +112,13 @@ bodyClass: "page-contact"
   <div class="container">
     <div class="contact-cmmc-cta-inner">
       <div>
-        <h2>Need assistance with CMMC compliance?</h2>
-        <p>You have come to the right place to discuss your cybersecurity needs. Our team is ready to provide expert guidance through the CMMC compliance process, from initial assessment to full certification support.</p>
+        <h2>Request a Security Audit Blueprint.</h2>
+        <p>Connect with our compliance architects for a preliminary gap analysis and strategic consultation. No sales pitch — just a frank assessment of where you stand.</p>
       </div>
-      <a href="#contact-form" class="btn btn-primary">Get Started</a>
+      <div class="contact-cta-actions">
+        <a href="#contact-form" class="btn btn-primary">Schedule a Consultation</a>
+        <a href="/services/" class="btn btn-outline-light">View Capabilities</a>
+      </div>
     </div>
   </div>
 </section>
