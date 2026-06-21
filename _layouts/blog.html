@@ -1,0 +1,99 @@
+---
+layout: default
+bodyClass: "page-blog"
+---
+
+{% include mini-hero.html %}
+
+<div class="blog-layout">
+  <div class="container">
+    <div class="row">
+
+      <!-- Main content -->
+      <div class="col-12 col-md-8 blog-main">
+
+        <!-- Featured post -->
+        {% assign featured = site.posts.first %}
+        {% if featured %}
+        <div class="blog-featured">
+          <span class="blog-featured-label">Latest Post</span>
+          {% if featured.image %}
+          <img class="blog-featured-image" src="{{ featured.image | relative_url }}" alt="{{ featured.title }}" />
+          {% else %}
+          <div class="blog-featured-image-placeholder"><i class="fas fa-newspaper"></i></div>
+          {% endif %}
+          <h2><a href="{{ featured.url | relative_url }}">{{ featured.title }}</a></h2>
+          <p class="blog-featured-meta">{{ featured.date | date: "%B %-d, %Y" }} &mdash; {{ featured.categories | join: ", " }}</p>
+          <p>{{ featured.excerpt | strip_html | truncate: 220 }}</p>
+          <a href="{{ featured.url | relative_url }}" class="btn btn-primary">Read Article</a>
+        </div>
+        {% endif %}
+
+        <!-- Archive grid -->
+        <span class="section-tag">All Articles</span>
+        <h2 class="section-heading" style="margin-bottom: 28px;">Discover Insights into CMMC Compliance</h2>
+        <div class="blog-archive-grid">
+          {% for post in site.posts offset: 1 %}
+          <div class="blog-archive-card">
+            <span class="blog-card-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <p>{{ post.excerpt | strip_html | truncate: 100 }}</p>
+            <a href="{{ post.url | relative_url }}" class="blog-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+          {% endfor %}
+        </div>
+
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-12 col-md-4 blog-sidebar">
+
+        <div class="sidebar-widget">
+          <h4>Search</h4>
+          <div class="sidebar-search">
+            <input type="text" placeholder="Search articles..." />
+            <button type="button"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+
+        <div class="sidebar-widget">
+          <h4>Categories</h4>
+          <ul class="sidebar-categories">
+            <li><a href="#">CMMC Compliance <span>{{ site.posts | size }}</span></a></li>
+            <li><a href="#">Cybersecurity <span>3</span></a></li>
+            <li><a href="#">DoD Contracting <span>2</span></a></li>
+            <li><a href="#">Risk Management <span>2</span></a></li>
+          </ul>
+        </div>
+
+        <div class="sidebar-widget">
+          <h4>Recent Posts</h4>
+          <ul class="sidebar-recent">
+            {% for post in site.posts limit: 4 %}
+            <li>
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Subscribe -->
+<section class="blog-subscribe">
+  <div class="container">
+    <div class="blog-subscribe-inner">
+      <h2 class="section-heading">Stay Updated with Our Insights</h2>
+      <p>Get our latest CMMC compliance articles and cybersecurity tips delivered straight to your inbox. No spam, unsubscribe any time.</p>
+      <form class="subscribe-form" action="#" method="post">
+        <input type="email" name="email" placeholder="Enter your email address" required />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>

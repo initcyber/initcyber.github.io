@@ -1,12 +1,8 @@
 ---
 title: "CMMC Services"
-layout: services
-description: "CMMC compliance services for defense contractors - assessments, remediation, and consulting"
-intro_image: "images/illustrations/reading.svg"
-intro_image_absolute: true
-intro_image_hide_on_mobile: true
+layout: services-page
+description: "CMMC compliance services for defense contractors - assessments, remediation, consulting, and training"
+bodyClass: page-services
+mini_hero_title: "CMMC Compliance Made Easy"
+mini_hero_subtitle: "End-to-end CMMC compliance support — from gap assessment through certification"
 ---
-
-# CMMC Services Tailored for Your Organization
-
-We provide comprehensive CMMC compliance services focused on your specific needs and maturity level. Whether you're beginning your compliance journey or preparing for certification, we have the expertise and certifications to guide you.

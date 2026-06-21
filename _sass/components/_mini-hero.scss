@@ -1,0 +1,30 @@
+.mini-hero {
+  background: $primary;
+  padding: 72px 0;
+  text-align: center;
+
+  .mini-hero-content {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .mini-hero-title {
+    color: #ffffff;
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin: 0 0 16px;
+    line-height: 1.2;
+    font-family: $font-family-heading;
+
+    @include media-breakpoint-down(md) {
+      font-size: 2rem;
+    }
+  }
+
+  .mini-hero-subtitle {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.6;
+  }
+}

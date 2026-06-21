@@ -1,0 +1,370 @@
+// ── Shared section utilities ──────────────────────────────────────────────────
+
+.section-tag {
+  display: inline-block;
+  color: $accent;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 12px;
+}
+
+.section-heading {
+  font-family: $font-family-heading;
+  font-size: 2rem;
+  font-weight: 700;
+  color: $primary;
+  margin: 0 0 16px;
+  line-height: 1.2;
+
+  @include media-breakpoint-down(md) {
+    font-size: 1.65rem;
+  }
+}
+
+.section-subheading {
+  font-size: 1rem;
+  color: $steel;
+  margin: 0 0 48px;
+  line-height: 1.6;
+}
+
+// ── Home Services ─────────────────────────────────────────────────────────────
+
+.home-services {
+  padding: 72px 0;
+  background: #ffffff;
+
+  .service-card {
+    padding: 36px 28px;
+    border: 1px solid $line;
+    border-radius: 6px;
+    height: 100%;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+      box-shadow: 0 8px 32px rgba(20, 45, 85, 0.1);
+      transform: translateY(-3px);
+    }
+  }
+
+  .service-card-icon {
+    width: 52px;
+    height: 52px;
+    background: rgba($accent, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    i {
+      font-size: 22px;
+      color: $accent;
+    }
+  }
+
+  .service-card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: $primary;
+    margin: 0 0 12px;
+  }
+
+  .service-card-body {
+    font-size: 0.95rem;
+    color: $steel;
+    line-height: 1.65;
+    margin: 0 0 20px;
+  }
+
+  .service-card-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: $accent;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: gap 0.2s ease;
+
+    &:hover {
+      gap: 10px;
+      text-decoration: none;
+    }
+  }
+
+  .row {
+    gap: 24px 0;
+  }
+}
+
+// ── Home About ────────────────────────────────────────────────────────────────
+
+.home-about {
+  padding: 80px 0;
+  background: $white-offset;
+
+  .home-about-content {
+    padding-right: 48px;
+
+    @include media-breakpoint-down(md) {
+      padding-right: 0;
+      margin-bottom: 36px;
+    }
+
+    p {
+      color: $steel;
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+  }
+
+  .home-about-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+
+    @include media-breakpoint-down(sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .home-about-col {
+    h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: $primary;
+      margin: 0 0 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 18px;
+        height: 3px;
+        background: $accent;
+        border-radius: 2px;
+        flex-shrink: 0;
+      }
+    }
+
+    p {
+      font-size: 0.9rem;
+      color: $steel;
+      margin: 0;
+    }
+  }
+
+  .home-about-image {
+    img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 0 12px 40px rgba(20, 45, 85, 0.15);
+    }
+  }
+}
+
+// ── Home Testimonials ─────────────────────────────────────────────────────────
+
+.home-testimonials {
+  padding: 80px 0;
+  background: #ffffff;
+
+  .section-heading {
+    margin-bottom: 8px;
+  }
+
+  .section-subheading {
+    margin-bottom: 48px;
+  }
+}
+
+// ── Home CTA Email ────────────────────────────────────────────────────────────
+
+.home-cta-email {
+  padding: 80px 0;
+  background: $white-offset;
+
+  .home-cta-email-inner {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+
+    .section-heading {
+      margin-bottom: 12px;
+    }
+
+    p {
+      color: $steel;
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+  }
+
+  .cta-email-form {
+    .cta-email-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 12px;
+    }
+
+    .cta-email-input {
+      flex: 1;
+      min-width: 200px;
+      padding: 13px 18px;
+      border: 1px solid $line;
+      border-radius: 4px;
+      font-size: 15px;
+      color: $black;
+      outline: none;
+      background: #fff;
+
+      &:focus {
+        border-color: $accent;
+        box-shadow: 0 0 0 3px rgba($accent, 0.15);
+      }
+    }
+  }
+
+  .cta-disclaimer {
+    font-size: 12px;
+    color: $steel;
+    margin: 0;
+
+    a {
+      color: $accent;
+      text-decoration: underline;
+    }
+  }
+}
+
+// ── Home Blog ─────────────────────────────────────────────────────────────────
+
+.home-blog {
+  padding: 80px 0;
+  background: #ffffff;
+
+  .home-blog-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+
+    .section-heading {
+      margin-bottom: 6px;
+    }
+
+    p {
+      color: $steel;
+      margin: 0;
+      font-size: 0.95rem;
+    }
+  }
+
+  .blog-card {
+    border: 1px solid $line;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+
+    &:hover {
+      box-shadow: 0 8px 32px rgba(20, 45, 85, 0.1);
+      transform: translateY(-3px);
+    }
+  }
+
+  .blog-card-image {
+    height: 200px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+
+      .blog-card:hover & {
+        transform: scale(1.03);
+      }
+    }
+  }
+
+  .blog-card-image-placeholder {
+    background: $white-offset;
+    border-bottom: 1px solid $line;
+  }
+
+  .blog-card-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .blog-card-date {
+    font-size: 12px;
+    color: $steel;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .blog-card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: $primary;
+    margin: 0 0 10px;
+    line-height: 1.35;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        color: $accent;
+      }
+    }
+  }
+
+  .blog-card-excerpt {
+    font-size: 0.9rem;
+    color: $steel;
+    line-height: 1.6;
+    margin: 0 0 16px;
+    flex: 1;
+  }
+
+  .blog-card-link {
+    font-size: 13px;
+    font-weight: 600;
+    color: $accent;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: auto;
+    transition: gap 0.2s ease;
+
+    &:hover {
+      gap: 10px;
+    }
+  }
+
+  .home-blog-grid {
+    gap: 24px 0;
+  }
+}

@@ -1,0 +1,33 @@
+<section class="home-blog">
+  <div class="container">
+    <div class="home-blog-header">
+      <div>
+        <h2 class="section-heading">Explore Our Insights on Cybersecurity</h2>
+        <p>Stay informed with our latest articles on CMMC compliance and cybersecurity trends.</p>
+      </div>
+      <a href="/blog/" class="btn btn-outline">Browse All Posts</a>
+    </div>
+    <div class="row home-blog-grid">
+      {% assign recent_posts = site.posts | limit: 3 %}
+      {% for post in recent_posts %}
+      <div class="col-12 col-md-4">
+        <div class="blog-card">
+          {% if post.image %}
+          <div class="blog-card-image">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" />
+          </div>
+          {% else %}
+          <div class="blog-card-image blog-card-image-placeholder"></div>
+          {% endif %}
+          <div class="blog-card-body">
+            <span class="blog-card-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <h3 class="blog-card-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <p class="blog-card-excerpt">{{ post.excerpt | strip_html | truncate: 110 }}</p>
+            <a href="{{ post.url | relative_url }}" class="blog-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

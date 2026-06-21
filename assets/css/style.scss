@@ -1,10 +1,12 @@
 ---
 ---
 
-// Colors - Init Cyber Branding (Updated Palette)
+// Colors - Init Cyber Branding
 $primary: #142D55;
 $primary-dark: #0A1830;
 $secondary: #2DC2FF;
+$accent: #E05A3A;
+$accent-dark: #C44A2C;
 $black: #1A2433;
 $white: #ffffff;
 $white-offset: #F6F7F9;
@@ -19,7 +21,7 @@ $link-hover-color: lighten($primary, 10%);
 $link-hover-decoration: underline;
 
 // Fonts
-$font-family-base: Helvetica, Arial, sans-serif, -apple-system;
+$font-family-base: 'Inter', Helvetica, Arial, sans-serif, -apple-system;
 $font-family-heading: "Playfair Display", serif, -apple-system;
 
 // Footer
@@ -104,17 +106,20 @@ $sub-footer-text-color: $white;
 @import "components/social";
 // @import "components/fonts"; // Uncomment this line to self host font
 
-// New Redesign Components
-@import "components/hero-redesign";
-@import "components/trust-row";
-@import "components/process-section";
-@import "components/services-cards";
-@import "components/credibility-section";
+// Redesign Components
+@import "components/mini-hero";
+@import "components/home-hero";
+@import "components/home-sections";
+@import "components/testimonials";
 
 // Pages
 @import "pages/page-home";
 @import "pages/page-teams";
 @import "pages/page-service";
+@import "pages/page-about";
+@import "pages/page-services";
+@import "pages/page-contact";
+@import "pages/page-blog";
 
 body {
   font-size: 16px;

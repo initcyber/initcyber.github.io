@@ -1,70 +1,66 @@
-.button {
-  white-space: nowrap;
-  display: inline-block;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 14px;
-  //box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-  background: $primary;
-  border-radius: 4px;
-  font-size: 14px;
-  font-weight: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.025em;
-  color: #ffffff;
-  text-decoration: none;
-  -webkit-transition: all 0.15s ease;
-  transition: all 0.15s ease;
-  &:hover {
-    color: #ffffff;
-    background-color: lighten($primary, 10%);
-    transform: translateY(-1px);
-    //box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
-    text-decoration: none;
-  }
-}
-
-// Modern button styling
 .btn {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 12px 26px;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
   border-radius: 4px;
   transition: all 0.2s ease;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   cursor: pointer;
   text-align: center;
   white-space: nowrap;
+  font-family: $font-family-base;
+  letter-spacing: 0.02em;
 
   &:hover {
     text-decoration: none;
+    transform: translateY(-1px);
   }
 }
 
+// Orange-red primary (matches wireframe CTA buttons)
 .btn-primary {
-  background: $secondary;
-  color: $primary;
-  border-color: $secondary;
+  background: $accent;
+  color: #ffffff;
+  border-color: $accent;
 
   &:hover {
-    background: darken($secondary, 10%);
-    border-color: darken($secondary, 10%);
-    color: $primary;
+    background: $accent-dark;
+    border-color: $accent-dark;
+    color: #ffffff;
   }
 }
 
-.btn-secondary {
+// Outlined white (for use on dark backgrounds)
+.btn-outline-white {
   background: transparent;
-  color: #fff;
-  border-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.5);
 
   &:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.5);
-    color: #fff;
+    background: rgba(255, 255, 255, 0.12);
+    border-color: #ffffff;
+    color: #ffffff;
   }
+}
+
+// Outlined navy (for use on light backgrounds)
+.btn-outline {
+  background: transparent;
+  color: $primary;
+  border-color: $primary;
+
+  &:hover {
+    background: $primary;
+    color: #ffffff;
+  }
+}
+
+// Legacy .button class
+.button {
+  @extend .btn;
+  @extend .btn-primary;
 }
 
 .cta-final {

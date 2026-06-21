@@ -1,0 +1,129 @@
+.home-hero {
+  .home-hero-bg {
+    background: $primary;
+    background-image: linear-gradient(135deg, $primary-dark 0%, $primary 60%, lighten($primary, 8%) 100%);
+    padding: 100px 0 80px;
+
+    @include media-breakpoint-down(md) {
+      padding: 64px 0 56px;
+    }
+  }
+
+  .home-hero-content {
+    max-width: 680px;
+  }
+
+  .hero-tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .hero-heading {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 0 0 20px;
+    font-family: $font-family-heading;
+
+    span {
+      color: $accent;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 2.2rem;
+    }
+  }
+
+  .hero-description {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0 0 36px;
+    max-width: 560px;
+  }
+
+  .hero-form {
+    .hero-form-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 14px;
+    }
+
+    .hero-input {
+      flex: 1;
+      min-width: 240px;
+      padding: 13px 18px;
+      border: none;
+      border-radius: 4px;
+      font-size: 15px;
+      outline: none;
+      color: $black;
+      background: #ffffff;
+
+      &::placeholder {
+        color: $steel;
+      }
+
+      &:focus {
+        box-shadow: 0 0 0 3px rgba($accent, 0.3);
+      }
+    }
+  }
+
+  .hero-disclaimer {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 12px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    i {
+      font-size: 11px;
+    }
+  }
+
+  // Trust strip below hero
+  .hero-trust-strip {
+    background: $white-offset;
+    border-bottom: 1px solid $line;
+    padding: 20px 0;
+    text-align: center;
+
+    .trust-label {
+      font-size: 13px;
+      color: $steel;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 0 0 14px;
+      font-weight: 500;
+    }
+
+    .trust-logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .trust-logo-placeholder {
+      font-size: 14px;
+      font-weight: 600;
+      color: $steel;
+      opacity: 0.6;
+      letter-spacing: 0.02em;
+    }
+  }
+}

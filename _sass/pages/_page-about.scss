@@ -1,0 +1,208 @@
+.page-about {
+
+  // ── Our Journey ─────────────────────────────────────────────────────────────
+  .about-journey {
+    padding: 80px 0;
+    background: #ffffff;
+
+    .about-journey-text {
+      padding-right: 48px;
+
+      @include media-breakpoint-down(md) {
+        padding-right: 0;
+        margin-bottom: 36px;
+      }
+
+      p {
+        color: $steel;
+        line-height: 1.7;
+        margin-bottom: 20px;
+      }
+    }
+
+    .about-journey-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+
+      img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+
+      img:first-child {
+        grid-column: 1 / -1;
+        height: 260px;
+      }
+    }
+  }
+
+  // ── Core Values ──────────────────────────────────────────────────────────────
+  .about-values {
+    padding: 80px 0;
+    background: $white-offset;
+    text-align: center;
+
+    .section-heading {
+      margin-bottom: 48px;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 32px;
+
+      @include media-breakpoint-down(lg) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include media-breakpoint-down(sm) {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+    }
+
+    .value-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+
+      .value-icon {
+        width: 72px;
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+          font-size: 40px;
+          color: $accent;
+        }
+      }
+
+      h4 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: $primary;
+        margin: 0;
+      }
+
+      p {
+        font-size: 0.88rem;
+        color: $steel;
+        margin: 0;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  // ── Team ────────────────────────────────────────────────────────────────────
+  .about-team {
+    padding: 80px 0;
+    background: #ffffff;
+
+    .section-heading {
+      margin-bottom: 40px;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+
+      @include media-breakpoint-down(md) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include media-breakpoint-down(sm) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .team-card {
+      text-align: center;
+
+      .team-card-photo {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 6px;
+        margin-bottom: 16px;
+        display: block;
+      }
+
+      .team-card-photo-placeholder {
+        width: 100%;
+        height: 260px;
+        background: $white-offset;
+        border: 1px solid $line;
+        border-radius: 6px;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+          font-size: 48px;
+          color: $line;
+        }
+      }
+
+      h3 {
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: $primary;
+        margin: 0 0 4px;
+      }
+
+      span {
+        font-size: 0.88rem;
+        color: $steel;
+      }
+    }
+  }
+
+  // ── About Testimonials ───────────────────────────────────────────────────────
+  .about-testimonials {
+    padding: 80px 0;
+    background: $white-offset;
+
+    .section-heading {
+      margin-bottom: 40px;
+    }
+
+    .row {
+      gap: 24px 0;
+    }
+  }
+
+  // ── About CTA ────────────────────────────────────────────────────────────────
+  .about-cta {
+    background: $primary;
+    padding: 80px 0;
+    text-align: center;
+
+    .about-cta-inner {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: #ffffff;
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 0 0 16px;
+      font-family: $font-family-heading;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.8);
+      margin: 0 0 28px;
+      line-height: 1.6;
+    }
+  }
+}
