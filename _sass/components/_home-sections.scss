@@ -2,11 +2,11 @@
 
 .section-tag {
   display: inline-block;
-  color: $accent;
-  font-size: 13px;
+  color: $secondary;
+  font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   margin-bottom: 12px;
 }
 
@@ -105,27 +105,27 @@
     border: 1px solid $line;
     border-radius: 6px;
     height: 100%;
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 
     &:hover {
-      box-shadow: 0 8px 32px rgba(20, 45, 85, 0.1);
-      transform: translateY(-3px);
+      border-color: $secondary;
+      box-shadow: 0 4px 20px rgba(45, 194, 255, 0.12);
     }
   }
 
   .service-card-icon {
-    width: 52px;
-    height: 52px;
-    background: rgba($accent, 0.1);
-    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background: $primary;
+    border-radius: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
 
     i {
-      font-size: 22px;
-      color: $accent;
+      font-size: 20px;
+      color: $secondary;
     }
   }
 
@@ -146,7 +146,7 @@
   .service-card-link {
     font-size: 14px;
     font-weight: 600;
-    color: $accent;
+    color: $secondary;
     text-decoration: none;
     display: inline-flex;
     align-items: center;

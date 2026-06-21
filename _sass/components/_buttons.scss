@@ -19,8 +19,35 @@
   }
 }
 
-// Orange-red primary (matches wireframe CTA buttons)
+// Deep navy primary (matches Stitch design system)
 .btn-primary {
+  background: $primary;
+  color: #ffffff;
+  border-color: $primary;
+
+  &:hover {
+    background: $primary-dark;
+    border-color: $primary-dark;
+    color: #ffffff;
+  }
+}
+
+// Cyan CTA (used for hero and high-emphasis actions on dark backgrounds)
+.btn-cta {
+  background: $secondary;
+  color: $primary;
+  border-color: $secondary;
+  font-weight: 700;
+
+  &:hover {
+    background: lighten($secondary, 8%);
+    border-color: lighten($secondary, 8%);
+    color: $primary;
+  }
+}
+
+// Orange accent (kept for specific accent uses)
+.btn-accent {
   background: $accent;
   color: #ffffff;
   border-color: $accent;
