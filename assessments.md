@@ -1,57 +1,71 @@
 ---
-title: "Security Assessments"
+title: "CMMC Level 2 Assessments"
 layout: interior-page
-description: "CMMC gap analysis, C3PAO audit preparation, vulnerability assessments, and compliance readiness for DoD contractors"
+description: "Official CMMC Level 2 assessments conducted by a Cyber-AB authorized C3PAO for Defense Industrial Base contractors, Managed Service Providers, and those who sell to or support the United States Government."
 eyebrow: "Services"
 bodyClass: page-interior
 ---
 
 <div class="interior-section">
-  <h2>Know Where You Stand Before the Auditor Does</h2>
-  <p>Init Cyber conducts rigorous security assessments that identify compliance gaps, validate existing controls, and produce the evidence documentation needed for successful CMMC certification. We don't just find problems — we quantify risk and build the roadmap to close every gap.</p>
+  <h2>Official CMMC Level 2 Certification Assessments</h2>
+  <p>CMMC Level 2 certification requires an assessment conducted by a Cyber-AB authorized Third-Party Assessment Organization. As an authorized C3PAO led by a Lead Certified CMMC Assessor, Init Cyber conducts official assessments that produce binding results DoD accepts. Our findings are objective, our process is rigorous, and we believe our warfighters deserve an assessor who takes that responsibility as seriously as they do.</p>
 </div>
 
 <div class="interior-cards-grid">
+
   <div class="interior-card">
-    <div class="interior-card-icon"><span class="material-symbols-outlined">analytics</span></div>
-    <h3>Gap Analysis &amp; Scoping</h3>
-    <p>We define your CUI environment boundary, map data flows, and identify every compliance deficit against NIST SP 800-171. The output is a prioritized Plan of Action and Milestones (POA&amp;M) with clear remediation steps.</p>
+    <div class="interior-card-icon"><span class="material-symbols-outlined">content_paste_search</span></div>
+    <h3>Pre-Assessment Scoping</h3>
+    <p>Every assessment begins with scoping. We define your assessment boundary, identify systems and personnel in scope, and issue an Information Request List so your team knows exactly what evidence is needed before day one of assessment week.</p>
   </div>
+
   <div class="interior-card">
-    <div class="interior-card-icon"><span class="material-symbols-outlined">assignment_turned_in</span></div>
-    <h3>C3PAO Audit Preparation</h3>
-    <p>Full mock audits that mirror the actual C3PAO assessment process. We validate your evidence packages, optimize your SPRS score, and ensure every control is not just documented but demonstrably implemented.</p>
+    <div class="interior-card-icon"><span class="material-symbols-outlined">rule</span></div>
+    <h3>Evidence Review &amp; Testing</h3>
+    <p>We evaluate objective evidence against all 110 NIST SP 800-171 controls and 320 assessment objectives per the CMMC Assessment Guide. Evidence is examined through document review, interviews, and observation.</p>
   </div>
+
   <div class="interior-card">
-    <div class="interior-card-icon"><span class="material-symbols-outlined">manage_search</span></div>
-    <h3>Vulnerability Assessment</h3>
-    <p>Automated and manual vulnerability scanning across your infrastructure. We deliver findings mapped to NIST control families with severity scoring and remediation priority — integrated with eMASS and DISA's CMRS dashboard.</p>
+    <div class="interior-card-icon"><span class="material-symbols-outlined">find_in_page</span></div>
+    <h3>Objective Findings</h3>
+    <p>Every control is assessed as Met, Not Met, or Not Applicable based solely on the evidence presented. Findings are documented with specificity, what was reviewed, what was observed, and the rationale for each determination.</p>
   </div>
+
   <div class="interior-card">
-    <div class="interior-card-icon"><span class="material-symbols-outlined">monitoring</span></div>
-    <h3>SIEM &amp; Log Review</h3>
-    <p>Assessment of your Security Information and Event Management posture — log source coverage, alert fidelity, retention compliance, and incident response readiness against CMMC audit criteria.</p>
+    <div class="interior-card-icon"><span class="material-symbols-outlined">assignment</span></div>
+    <h3>Final Assessment Report</h3>
+    <p>The output of every assessment is a formal Final Assessment Report, a complete record of findings, evidence reviewed, and control determinations.</p>
   </div>
+
   <div class="interior-card">
-    <div class="interior-card-icon"><span class="material-symbols-outlined">policy</span></div>
-    <h3>NIST &amp; HIPAA Compliance Review</h3>
-    <p>Cross-framework compliance assessments for organizations subject to multiple regulatory requirements. We map overlapping controls to reduce duplication and accelerate multi-framework certification.</p>
+    <div class="interior-card-icon"><span class="material-symbols-outlined">speed</span></div>
+    <h3>SPRS Score Determination</h3>
+    <p>Your SPRS score is a direct output of the assessment. Calculated against the 110 controls of NIST SP 800-171 and reported to the Supplier Performance Risk System. </p>
   </div>
+
   <div class="interior-card">
-    <div class="interior-card-icon"><span class="material-symbols-outlined">fact_check</span></div>
-    <h3>Readiness Scoring</h3>
-    <p>Quantified compliance readiness scoring against all 110 NIST SP 800-171 controls. We deliver a clear percentage-based readiness report with a timeline to full certification eligibility.</p>
+    <div class="interior-card-icon"><span class="material-symbols-outlined">next_plan</span></div>
+    <h3>Conditional Certification &amp; POA&amp;M</h3>
+    <p>Where deficiencies exist, we identify which findings are eligible for a Plan of Action &amp; Milestones under CMMC program rules and is documented clearly so you know exactly what must be remediated and by when.</p>
+  </div>
+
+  <div class="interior-callout">
+    <h3>Not Ready for a Formal Assessment?</h3>
+    <p>Init Cyber offers mock assessments for organizations preparing for CMMC Level 2 certification. A mock assessment mirrors the official process — evidence review, control testing, and findings documentation — so you know exactly where you stand before the formal engagement begins.</p>
+    <p>In accordance with CMMC program conflict-of-interest requirements, mock assessment engagements are conducted separately from certification assessment clients. One firm cannot do both for the same organization.</p>
+    <a href="/contact/" class="btn-interior-outline">INQUIRE ABOUT A MOCK ASSESSMENT</a>
   </div>
 </div>
 
 <div class="interior-section" style="margin-top: 48px;">
-  <h2>Assessment Deliverables</h2>
+  <h2>What You Receive</h2>
   <ul class="interior-list">
-    <li>Executive summary with overall readiness score and risk rating</li>
-    <li>Control-by-control assessment matrix mapped to NIST SP 800-171</li>
-    <li>Prioritized POA&amp;M with estimated remediation effort and cost</li>
-    <li>Evidence documentation guidance for C3PAO audit readiness</li>
-    <li>SPRS score calculation and optimization recommendations</li>
+    <li>Official Final Assessment Report</li>
+    <li>Control-by-control findings across all 110 NIST SP 800-171 controls and 320 objectives</li>
+    <li>Objective evidence documentation for every determination</li>
+    <li>Validated SPRS score for DFARS 252.204-7019 reporting</li>
+    <li>POA&amp;M eligibility determination for any Not Met findings</li>
+    <li>Direct access to your Lead Certified CMMC Assessor throughout the engagement</li>
   </ul>
-  <p style="margin-top: 24px;"><a href="/contact/">Schedule a gap analysis</a> to understand your current compliance posture.</p>
+  <p style="margin-top: 24px;"><a href="/contact/">Schedule a scoping call</a> to discuss your assessment timeline and readiness.</p>
 </div>
