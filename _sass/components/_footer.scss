@@ -71,7 +71,18 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  
+
+  a, span { 
+    font-size: 15px;
+    color: rgba(255,255,255,0.55);
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
 }
 
 .footer-links-grid {
