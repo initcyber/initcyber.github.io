@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<section class="page-hero page-hero--light">
+  <div class="container">
+    <div class="page-hero-content">
+      <span class="hero-eyebrow"><span class="hero-eyebrow-line" aria-hidden="true"></span>{{ page.eyebrow | default: "Init Cyber" }}</span>
+      <h1 class="page-hero-heading">{{ page.title }}</h1>
+      {% if page.description %}<p class="page-hero-desc">{{ page.description }}</p>{% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="interior-content">
+  <div class="container">
+    <div class="interior-body">
+      {{ content }}
+    </div>
+  </div>
+</section>
