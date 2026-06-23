@@ -72,7 +72,7 @@
   flex-direction: column;
   gap: 12px;
 
-  a {
+  a, span { 
     font-size: 15px;
     color: rgba(255,255,255,0.55);
     text-decoration: none;
@@ -130,8 +130,8 @@
   border-top: 1px solid rgba(255,255,255,0.12);
   padding: 20px 0;
   display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 
   a {
     font-size: 13px;
@@ -144,6 +144,12 @@
       text-decoration: none;
     }
   }
+}
+
+.footer-bottom-left,
+.footer-bottom-right {
+  display: flex;
+  gap: 24px;
 }
 
 // Clear old footer class for backward compat
