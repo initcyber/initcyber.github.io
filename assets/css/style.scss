@@ -157,5 +157,5 @@ body {
   }
 }
 
-// Remove old wrapper padding artifact
-.wrapper { overflow: hidden; }
+// Wrapper — no overflow clipping so pages scroll normally
+.wrapper { overflow: visible; }
