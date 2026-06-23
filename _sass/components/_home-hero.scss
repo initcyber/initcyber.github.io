@@ -1,132 +1,334 @@
+// ── Shared design patterns ─────────────────────────────────────────────────────
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+// Blueprint bracket decoration (navy, for light backgrounds)
+.blueprint-border {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -1px; left: -1px;
+    width: 14px; height: 14px;
+    border-top: 2px solid $primary;
+    border-left: 2px solid $primary;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px; right: -1px;
+    width: 14px; height: 14px;
+    border-bottom: 2px solid $primary;
+    border-right: 2px solid $primary;
+  }
+}
+
+// Blueprint bracket (secondary/teal, used on white cards)
+.blueprint-accent {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: -8px; left: -8px;
+    width: 16px; height: 16px;
+    border-top: 2px solid $secondary;
+    border-left: 2px solid $secondary;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -8px; right: -8px;
+    width: 16px; height: 16px;
+    border-bottom: 2px solid $secondary;
+    border-right: 2px solid $secondary;
+  }
+}
+
+// Bracket accent for stat cards
+.bracket-accent {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 12px; height: 12px;
+    border-top: 2px solid $primary;
+    border-left: 2px solid $primary;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0; right: 0;
+    width: 12px; height: 12px;
+    border-bottom: 2px solid $primary;
+    border-right: 2px solid $primary;
+  }
+}
+
+// L-bracket decorations
+.l-bracket {
+  width: 20px; height: 20px;
+  border-left: 2px solid $primary;
+  border-top: 2px solid $primary;
+  flex-shrink: 0;
+}
+
+.l-bracket-bottom {
+  width: 20px; height: 20px;
+  border-right: 2px solid $primary;
+  border-bottom: 2px solid $primary;
+  flex-shrink: 0;
+}
+
+// ── Shared section typography ──────────────────────────────────────────────────
+
+.section-heading {
+  font-family: $font-family-heading;
+  font-size: 32px;
+  font-weight: 600;
+  color: $primary;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin: 0 0 16px;
+
+  @include media-breakpoint-down(md) { font-size: 28px; }
+}
+
+.section-subheading {
+  font-size: 18px;
+  color: $on-surface-variant;
+  line-height: 1.6;
+  margin: 0 0 48px;
+}
+
+.section-tag {
+  display: inline-block;
+  color: $secondary;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+// ── Home Hero (dark navy) ─────────────────────────────────────────────────────
+
 .home-hero {
-  .home-hero-bg {
-    background: $primary;
-    background-image:
-      radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px),
-      linear-gradient(160deg, $primary-dark 0%, $primary 70%);
-    background-size: 28px 28px, 100% 100%;
-    padding: 100px 0 80px;
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background-color: $primary;
+  background-image:
+    linear-gradient(rgba(0, 101, 140, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 101, 140, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  overflow: hidden;
+  padding: 80px 0;
 
-    @include media-breakpoint-down(md) {
-      padding: 64px 0 56px;
-    }
+  @include media-breakpoint-down(md) { min-height: auto; padding: 72px 0; }
+}
+
+.hero-geometric-accents {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hero-geo-rect {
+  position: absolute;
+  border: 1px solid $secondary;
+
+  &--1 {
+    top: 25%; left: 25%;
+    width: 384px; height: 384px;
+    transform: rotate(-12deg);
+    opacity: 0.3;
   }
 
-  .home-hero-content {
-    max-width: 680px;
+  &--2 {
+    bottom: 25%; right: 25%;
+    width: 256px; height: 256px;
+    transform: rotate(45deg);
+    opacity: 0.2;
   }
+}
 
-  .hero-tag {
-    display: inline-block;
-    background: rgba(255, 255, 255, 0.12);
-    color: rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    padding: 6px 16px;
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    margin-bottom: 24px;
+.hero-container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.hero-content {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: $primary-container;
+  color: $on-primary-container;
+  font-family: $font-family-mono;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 6px 12px;
+  border: 1px solid rgba(0, 101, 140, 0.3);
+
+  .material-symbols-outlined { font-size: 16px !important; }
+}
+
+.hero-heading {
+  font-family: $font-family-heading;
+  font-size: 64px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0;
+
+  @include media-breakpoint-down(lg) { font-size: 48px; }
+  @include media-breakpoint-down(md) { font-size: 40px; }
+}
+
+.hero-heading-accent {
+  color: $secondary-container;
+}
+
+.hero-description {
+  font-size: 18px;
+  color: $on-primary-container;
+  line-height: 1.65;
+  max-width: 560px;
+  margin: 0;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+// ── Hero Button variants ───────────────────────────────────────────────────────
+
+.btn-hero-cta {
+  display: inline-block;
+  background: $secondary-container;
+  color: $on-secondary-container;
+  font-family: $font-family-base;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 16px 32px;
+  text-decoration: none;
+  border: 2px solid $secondary-container;
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(1.1);
+    text-decoration: none;
+    color: $on-secondary-container;
   }
+}
 
-  .hero-heading {
+.btn-hero-outline {
+  display: inline-block;
+  background: transparent;
+  color: #ffffff;
+  font-family: $font-family-base;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 14px 30px;
+  text-decoration: none;
+  border: 2px solid rgba(255,255,255,0.5);
+  transition: background 0.2s, border-color 0.2s;
+
+  &:hover {
+    background: rgba(255,255,255,0.05);
+    border-color: rgba(255,255,255,0.8);
     color: #ffffff;
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 1.15;
-    margin: 0 0 20px;
-    font-family: $font-family-heading;
-
-    span {
-      color: $secondary;
-    }
-
-    @include media-breakpoint-down(md) {
-      font-size: 2.2rem;
-    }
+    text-decoration: none;
   }
+}
 
-  .hero-description {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 1.05rem;
-    line-height: 1.7;
-    margin: 0 0 36px;
-    max-width: 560px;
+.btn-hero-primary {
+  display: inline-block;
+  background: $primary;
+  color: #ffffff;
+  font-family: $font-family-base;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 16px 48px;
+  text-decoration: none;
+  border: 2px solid $primary;
+  transition: background 0.2s, border-color 0.2s;
+
+  &:hover {
+    background: $primary-container;
+    border-color: $primary-container;
+    color: #ffffff;
+    text-decoration: none;
   }
+}
 
-  .hero-form {
-    .hero-form-row {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-bottom: 14px;
-    }
+.btn-hero-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  color: $primary;
+  font-family: $font-family-base;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 14px 38px;
+  text-decoration: none;
+  border: 2px solid $line;
+  transition: background 0.2s, border-color 0.2s;
 
-    .hero-input {
-      flex: 1;
-      min-width: 240px;
-      padding: 13px 18px;
-      border: none;
-      border-radius: 4px;
-      font-size: 15px;
-      outline: none;
-      color: $black;
-      background: #ffffff;
-
-      &::placeholder {
-        color: $steel;
-      }
-
-      &:focus {
-        box-shadow: 0 0 0 3px rgba($accent, 0.3);
-      }
-    }
+  &:hover {
+    border-color: $primary;
+    background: $surface-container-low;
+    color: $primary;
+    text-decoration: none;
   }
+}
 
-  .hero-disclaimer {
-    color: rgba(255, 255, 255, 0.55);
-    font-size: 12px;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    gap: 6px;
+.btn-outline-primary {
+  display: inline-block;
+  background: transparent;
+  color: $primary;
+  font-family: $font-family-base;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 12px 32px;
+  text-decoration: none;
+  border: 2px solid $primary;
+  transition: background 0.2s, color 0.2s;
 
-    i {
-      font-size: 11px;
-    }
-  }
-
-  // Trust strip below hero
-  .hero-trust-strip {
-    background: $white-offset;
-    border-bottom: 1px solid $line;
-    padding: 20px 0;
-    text-align: center;
-
-    .trust-label {
-      font-size: 13px;
-      color: $steel;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin: 0 0 14px;
-      font-weight: 500;
-    }
-
-    .trust-logos {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-
-    .trust-logo-placeholder {
-      font-size: 14px;
-      font-weight: 600;
-      color: $steel;
-      opacity: 0.6;
-      letter-spacing: 0.02em;
-    }
+  &:hover {
+    background: $primary;
+    color: #ffffff;
+    text-decoration: none;
   }
 }

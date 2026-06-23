@@ -1,28 +1,160 @@
-.header {
-  background-color: #ffffff;
+// Material Symbols base style
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.site-header {
+  background: $white-offset;
   border-bottom: 1px solid $line;
-  padding: 14px 0;
   position: sticky;
   top: 0;
   z-index: 100;
-  box-shadow: 0 2px 8px rgba(20, 45, 85, 0.07);
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
 
-  .container {
+.site-nav {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 0 80px;
+  }
+}
+
+.site-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 80px;
+}
+
+.site-nav-logo {
+  flex-shrink: 0;
+  a { display: flex; align-items: center; }
+  img { display: block; height: 40px; width: auto; }
+}
+
+.site-nav-links {
+  display: none;
+  @include media-breakpoint-up(lg) {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 16px;
+    gap: 32px;
+    flex: 1;
+    justify-content: flex-start;
+    margin-left: 40px;
   }
+}
 
-  .header-cta {
+// Dropdown nav items
+.nav-dropdown {
+  position: relative;
+
+  &:hover .dropdown-panel {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  padding: 8px 0;
+  font-family: $font-family-base;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $on-surface-variant;
+  cursor: pointer;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $secondary;
+  }
+}
+
+.nav-chevron {
+  font-size: 18px !important;
+  opacity: 0.7;
+}
+
+.dropdown-panel {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 200px;
+  background: #ffffff;
+  border: 1px solid $line;
+  box-shadow: 0 4px 16px rgba(0, 24, 59, 0.08);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: all 0.18s ease;
+  z-index: 200;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $on-surface-variant;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+
+  &:hover {
+    background: $surface-container;
+    color: $secondary;
+    text-decoration: none;
+  }
+}
+
+// Header CTA button
+.site-nav-cta {
+  flex-shrink: 0;
+}
+
+.btn-nav-primary {
+  display: inline-block;
+  background: $primary;
+  color: #ffffff;
+  font-family: $font-family-base;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 12px 24px;
+  text-decoration: none;
+  border: none;
+  transition: background 0.2s;
+
+  &:hover {
+    background: $primary-container;
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+// Hamburger container (mobile only)
+#toggle-main-menu-mobile {
+  @include media-breakpoint-up(lg) {
     display: none;
-    flex-shrink: 0;
-    @include media-breakpoint-up(md) {
-      display: block;
-    }
   }
 }
 
-.lock-scroll {
-  overflow: hidden;
-}
+// Remove old .header, .lock-scroll styles that conflict
+.lock-scroll { overflow: hidden; }

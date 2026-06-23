@@ -3,146 +3,154 @@ layout: default
 bodyClass: "page-services"
 ---
 
-{% include mini-hero.html %}
-
-<!-- Competencies -->
-<section class="services-why">
+<!-- Hero -->
+<section class="page-hero page-hero--grid">
   <div class="container">
-    <span class="section-tag">Core Competencies</span>
-    <h2 class="section-heading">Core Competencies</h2>
-    <p class="section-subheading">Our compliance architecture delivers solutions to achieve regulatory compliance and technical resilience through structured, scalable frameworks.</p>
-    <div class="row">
-      <div class="col-12 col-md-4">
-        <div class="why-card">
-          <div class="why-number"><i class="fas fa-shield-halved"></i></div>
-          <h3>CMMC Certification</h3>
-          <p>Full-cycle CMMC Level 2 support — scoping, gap analysis, SSP authoring, POA&amp;M management, and pre-assessment mock audits conducted by C3PAO-certified assessors.</p>
+    <div class="page-hero-content">
+      <div class="page-hero-badge">
+        <span class="material-symbols-outlined" style="font-size:16px;vertical-align:middle;">verified_user</span>
+        SECURE THE DEFENSE INDUSTRIAL BASE
+      </div>
+      <h1 class="page-hero-heading">CMMC 2.0 Strategic Compliance Path</h1>
+      <p class="page-hero-desc">Navigate the Cybersecurity Maturity Model Certification (CMMC 2.0) with institutional precision. We provide rigorous gap analysis, audit preparation, and long-term security architecture for DoD contractors.</p>
+      <div class="page-hero-actions">
+        <a href="/contact/" class="btn-hero-primary">SCHEDULE GAP ANALYSIS</a>
+        <a href="#" class="btn-hero-ghost">
+          <span class="material-symbols-outlined" style="font-size:18px;vertical-align:middle;">download</span>
+          DOWNLOAD CHECKLIST
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CMMC Levels -->
+<section class="cmmc-levels">
+  <div class="container">
+    <div class="cmmc-levels-header">
+      <div class="l-bracket" aria-hidden="true"></div>
+      <h2 class="section-heading" style="margin-left:16px;">The Framework Structure</h2>
+    </div>
+    <div class="cmmc-levels-grid">
+      <div class="cmmc-level-card">
+        <div class="cmmc-level-code">01 // FOUNDATIONAL</div>
+        <h3 class="cmmc-level-name">Level 1: Foundational</h3>
+        <p>Self-assessment for 17 practices. Focused on basic safeguarding of Federal Contract Information (FCI).</p>
+        <ul class="cmmc-level-list">
+          <li><span class="material-symbols-outlined">check_circle</span> FCI Protection</li>
+          <li><span class="material-symbols-outlined">check_circle</span> Annual Self-Assessment</li>
+          <li><span class="material-symbols-outlined">check_circle</span> 17 Security Controls</li>
+        </ul>
+      </div>
+      <div class="cmmc-level-card cmmc-level-card--featured">
+        <div class="cmmc-level-featured-badge">
+          <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">star</span>
+        </div>
+        <div class="cmmc-level-code" style="color:#48c1ff;">02 // ADVANCED</div>
+        <h3 class="cmmc-level-name">Level 2: Advanced</h3>
+        <p style="opacity:0.85;">Alignment with NIST SP 800-171. Required for contractors handling Controlled Unclassified Information (CUI).</p>
+        <ul class="cmmc-level-list">
+          <li><span class="material-symbols-outlined">check_circle</span> NIST SP 800-171 Mapping</li>
+          <li><span class="material-symbols-outlined">check_circle</span> Triennial 3rd-Party Audit</li>
+          <li><span class="material-symbols-outlined">check_circle</span> 110 Security Controls</li>
+        </ul>
+      </div>
+      <div class="cmmc-level-card">
+        <div class="cmmc-level-code">03 // EXPERT</div>
+        <h3 class="cmmc-level-name">Level 3: Expert</h3>
+        <p>Alignment with NIST SP 800-172. Designed for high-priority programs and protection against APTs.</p>
+        <ul class="cmmc-level-list">
+          <li><span class="material-symbols-outlined">check_circle</span> Advanced APT Defense</li>
+          <li><span class="material-symbols-outlined">check_circle</span> Government-Led Audit</li>
+          <li><span class="material-symbols-outlined">check_circle</span> 110+ Security Controls</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Service Offerings -->
+<section class="services-offerings">
+  <div class="container">
+    <div class="services-offerings-header">
+      <div>
+        <h2 class="section-heading">Technical Compliance Services</h2>
+        <p class="section-subheading">We provide end-to-end support for DIB members, ensuring technical readiness before your official C3PAO assessment.</p>
+      </div>
+      <div class="l-bracket-bottom" aria-hidden="true"></div>
+    </div>
+    <div class="services-grid">
+      <div class="service-item">
+        <div class="service-item-icon"><span class="material-symbols-outlined">analytics</span></div>
+        <div>
+          <h4 class="service-item-title">Gap Analysis &amp; Scoping</h4>
+          <p class="service-item-body">We define your CUI environment, identify compliance deficits against NIST 800-171, and develop a prioritized Plan of Action and Milestones (POA&amp;M).</p>
         </div>
       </div>
-      <div class="col-12 col-md-4">
-        <div class="why-card">
-          <div class="why-number"><i class="fas fa-magnifying-glass-chart"></i></div>
-          <h3>Vulnerability Management</h3>
-          <p>Continuous vulnerability scanning, prioritized remediation workflows, and patch compliance reporting aligned to NIST 800-171 SI and RA control families.</p>
+      <div class="service-item">
+        <div class="service-item-icon"><span class="material-symbols-outlined">assignment_turned_in</span></div>
+        <div>
+          <h4 class="service-item-title">C3PAO Audit Preparation</h4>
+          <p class="service-item-body">Mock audits, evidence documentation, and SPRS score optimization. We ensure your technical controls are verifiable and sustainable.</p>
         </div>
       </div>
-      <div class="col-12 col-md-4">
-        <div class="why-card">
-          <div class="why-number"><i class="fas fa-user-tie"></i></div>
-          <h3>vCISO Advisory</h3>
-          <p>Fractional CISO services providing strategic security leadership, board-level reporting, vendor risk oversight, and ongoing CMMC posture management for contractors without a full-time CISO.</p>
+      <div class="service-item">
+        <div class="service-item-icon"><span class="material-symbols-outlined">description</span></div>
+        <div>
+          <h4 class="service-item-title">SSP &amp; Policy Authoring</h4>
+          <p class="service-item-body">Comprehensive System Security Plans (SSP) and tailored security policies that meet specific CMMC domain requirements without bloating overhead.</p>
+        </div>
+      </div>
+      <div class="service-item">
+        <div class="service-item-icon"><span class="material-symbols-outlined">build</span></div>
+        <div>
+          <h4 class="service-item-title">Remediation Engineering</h4>
+          <p class="service-item-body">Hands-on implementation of encryption, identity management (MFA), SIEM integration, and network segmentation to close identified gaps.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Our Process -->
-<section class="services-process" id="process">
+<!-- Non-Compliance Risk -->
+<section class="compliance-risk">
   <div class="container">
-    <span class="section-tag">The Init Cyber Framework</span>
-    <h2 class="section-heading text-center">The Init Cyber Framework</h2>
-    <p class="section-subheading text-center">Precision engineering applied to cybersecurity. We don't just "audit" — we architect environments that are compliant by design.</p>
-    <div class="process-steps">
-      <div class="process-step">
-        <div class="step-number">01</div>
-        <h3>Discovery</h3>
-        <p>We define your CUI boundary, inventory all in-scope assets, and run a quantitative gap analysis against all 110 NIST 800-171 practices to produce your baseline SPRS score.</p>
-      </div>
-      <div class="process-step">
-        <div class="step-number">02</div>
-        <h3>Hardening</h3>
-        <p>We execute a risk-prioritized remediation plan — closing control gaps, authoring your SSP and POA&amp;M, and hardening your environment to withstand a C3PAO assessment.</p>
-      </div>
-      <div class="process-step">
-        <div class="step-number">03</div>
-        <h3>Automation</h3>
-        <p>We implement automated evidence collection, continuous compliance monitoring, and alert workflows so your posture is maintained without manual effort between assessments.</p>
-      </div>
-      <div class="process-step">
-        <div class="step-number">04</div>
-        <h3>Governance</h3>
-        <p>We establish the policies, training cadences, and review cycles that keep your program audit-ready as the threat landscape and CMMC requirements evolve.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Trust Stats -->
-<section class="services-trust-stats">
-  <div class="container">
-    <span class="section-tag">Why Defense Contractors Trust Us</span>
-    <h2 class="section-heading">We Specialize Exclusively in the Defense Industrial Base.</h2>
-    <p class="section-subheading">Our consultants carry high-level clearances and deep technical proficiency, built through decades of federal service and private-sector practice.</p>
-    <div class="trust-stats-row">
-      <div class="trust-stat-item">
-        <div class="trust-stat-number">100%</div>
-        <div class="trust-stat-label">Audit Pass Rate</div>
-        <p>First-attempt CMMC Level 2 certification for every qualified client we've taken to assessment.</p>
-      </div>
-      <div class="trust-stat-item">
-        <div class="trust-stat-number">15+</div>
-        <div class="trust-stat-label">Years Experience</div>
-        <p>Decades of combined expertise navigating DoD cybersecurity frameworks, from RMF to CMMC 2.0.</p>
-      </div>
-      <div class="trust-stat-item">
-        <div class="trust-stat-number">24/7</div>
-        <div class="trust-stat-label">Threat Monitoring</div>
-        <p>Continuous security operations center coverage for managed defense clients, 365 days a year.</p>
-      </div>
-      <div class="trust-stat-item">
-        <div class="trust-stat-number">C3PAO</div>
-        <div class="trust-stat-label">Certified</div>
-        <p>Authorized as a Certified Third-Party Assessment Organization — we have the authority to certify your compliance.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Testimonials -->
-<section class="services-testimonials">
-  <div class="container">
-    <h2 class="section-heading text-center">What Our Clients Say</h2>
-    <p class="section-subheading text-center">Here's what it has made a difference for those we serve</p>
-    <div class="row testimonials-grid">
-      <div class="col-12 col-md-6">
-        <div class="testimonial-card">
-          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <blockquote>"Working with Init Cyber has transformed our compliance program. They kept us on track and delivered results that exceeded our expectations."</blockquote>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">AL</div>
-            <div><strong>Alex L.</strong><span>IT Director</span></div>
+    <div class="compliance-risk-grid">
+      <div class="compliance-risk-text">
+        <h2 class="section-heading" style="color:#ffffff;">The Cost of Non-Compliance</h2>
+        <div class="risk-items">
+          <div class="risk-item risk-item--warning">
+            <span class="material-symbols-outlined risk-icon">warning</span>
+            <div>
+              <div class="risk-label">Contractual Risk</div>
+              <p>Loss of DoD contracts worth billions if certification is not attained by deadlines.</p>
+            </div>
+          </div>
+          <div class="risk-item risk-item--error">
+            <span class="material-symbols-outlined risk-icon">block</span>
+            <div>
+              <div class="risk-label">False Claims Act</div>
+              <p>Legal liability and significant fines for misrepresenting cybersecurity posture to the DoD.</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6">
-        <div class="testimonial-card">
-          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <blockquote>"Our experience with CMMC compliance was completely changed for the better. Their guidance gave us the confidence to pass the assessment."</blockquote>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">JW</div>
-            <div><strong>Jordan W.</strong><span>Operations Manager</span></div>
-          </div>
+      <div class="compliance-risk-display">
+        <div class="risk-display-header">
+          <span class="risk-display-code">SYSTEM_SCAN_REPORT</span>
+          <span class="risk-display-badge">ENCRYPTED</span>
         </div>
-      </div>
-      <div class="col-12 col-md-6">
-        <div class="testimonial-card">
-          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <blockquote>"The guidance from this CMMC compliance team has been exceptional. They took all the complexity and made it manageable for our small team."</blockquote>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">TR</div>
-            <div><strong>Taylor R.</strong><span>CISO</span></div>
-          </div>
+        <div class="risk-progress-bar">
+          <div class="risk-progress-fill" style="width:75%"></div>
         </div>
-      </div>
-      <div class="col-12 col-md-6">
-        <div class="testimonial-card">
-          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <blockquote>"We appreciated the professionalism and dedication. Init Cyber made CMMC compliance understandable and achievable for our organization."</blockquote>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">MB</div>
-            <div><strong>Monica B.</strong><span>Director</span></div>
-          </div>
+        <div class="risk-progress-labels">
+          <span>COMPLIANCE_READY</span><span>75%</span>
+        </div>
+        <div class="risk-modules">
+          <div class="risk-module">AUTH</div>
+          <div class="risk-module risk-module--active">NIST_171</div>
+          <div class="risk-module">ENC_AES</div>
+          <div class="risk-module">LOG_RES</div>
         </div>
       </div>
     </div>
@@ -150,15 +158,13 @@ bodyClass: "page-services"
 </section>
 
 <!-- Final CTA -->
-<section class="services-cta">
-  <div class="services-cta-inner">
-    <div class="services-cta-text">
-      <h2>Ready to Secure Your Next Prime Contract?</h2>
-      <p>Don't let compliance gaps sit between you and your primes. Schedule a 90-minute scoping session with our lead architects.</p>
-      <a href="/contact/" class="btn btn-cta">Start Your Readiness Assessment</a>
-    </div>
-    <div class="services-cta-image">
-      <img src="{{ '/images/thom-holmes-Lrfw0U_o9I0-unsplash.jpg' | relative_url }}" alt="Cybersecurity" />
+<section class="home-cta">
+  <div class="container">
+    <h2 class="home-cta-heading">Ready for Your CMMC Assessment?</h2>
+    <p class="home-cta-sub">Don't wait for the rulemaking to conclude. Ensure your technical controls are operational today.</p>
+    <div class="home-cta-actions">
+      <a href="/contact/" class="btn-hero-primary">CONSULT AN EXPERT</a>
+      <a href="#" class="btn-hero-ghost">VIEW COMPLIANCE MAP</a>
     </div>
   </div>
 </section>

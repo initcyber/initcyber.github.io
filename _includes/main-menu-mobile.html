@@ -1,11 +1,20 @@
 <div id="main-menu-mobile" class="main-menu-mobile">
-  {% assign mainmenu = site.data.menus.main | sort: 'weight'  %}
-  <ul>
-    {% for item in mainmenu %}
-    <li class="{% if item.url == page.url %}active{% endif %}">
-      <a href="{{ item.url | relative_url }}">{{ item.name }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-  <a href="/contact/" class="btn btn-primary" style="margin-top: 32px;">Get a Quote</a>
+  <div class="mobile-menu-group">
+    <p class="mobile-menu-label">Services</p>
+    <a href="/services/">Consulting</a>
+    <a href="/services/">Assessments</a>
+  </div>
+  <div class="mobile-menu-group">
+    <p class="mobile-menu-label">Who We Are</p>
+    <a href="#">Capability Statement</a>
+    <a href="#">Careers</a>
+    <a href="/about/">About Us</a>
+  </div>
+  <div class="mobile-menu-group">
+    <p class="mobile-menu-label">Resources</p>
+    <a href="/blog/">Blog</a>
+    <a href="#">Complaints</a>
+    <a href="#">Appeals</a>
+  </div>
+  <a href="/contact/" class="btn-nav-primary" style="margin-top: 24px; display: inline-block;">CONTACT US</a>
 </div>

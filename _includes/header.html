@@ -1,19 +1,51 @@
-<div class="header">
-  <div class="container">
-    <div class="logo">
-      <a href="{{ site.baseurl }}">
-        <img height="{{ site.logo.desktop_height }}" alt="{{ site.title }}" src="{{ site.logo.desktop | relative_url }}" style="width: auto; display: block;" />
-      </a>
+<header class="site-header">
+  <nav class="site-nav container-fluid">
+    <div class="site-nav-inner">
+      <div class="site-nav-logo">
+        <a href="{{ site.baseurl }}">
+          <img height="{{ site.logo.desktop_height }}" alt="{{ site.title }}" src="{{ site.logo.desktop | relative_url }}" style="width: auto; display: block;" />
+        </a>
+      </div>
+
+      <div class="site-nav-links" id="main-menu">
+        <div class="nav-dropdown">
+          <button class="nav-btn" aria-haspopup="true" aria-expanded="false">
+            Services <span class="material-symbols-outlined nav-chevron">expand_more</span>
+          </button>
+          <div class="dropdown-panel" role="menu">
+            <a class="dropdown-item" href="/services/" role="menuitem">Consulting</a>
+            <a class="dropdown-item" href="/services/" role="menuitem">Assessments</a>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <button class="nav-btn" aria-haspopup="true" aria-expanded="false">
+            Who We Are <span class="material-symbols-outlined nav-chevron">expand_more</span>
+          </button>
+          <div class="dropdown-panel" role="menu">
+            <a class="dropdown-item" href="#" role="menuitem">Capability Statement</a>
+            <a class="dropdown-item" href="#" role="menuitem">Careers</a>
+            <a class="dropdown-item" href="/about/" role="menuitem">About Us</a>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <button class="nav-btn" aria-haspopup="true" aria-expanded="false">
+            Resources <span class="material-symbols-outlined nav-chevron">expand_more</span>
+          </button>
+          <div class="dropdown-panel" role="menu">
+            <a class="dropdown-item" href="/blog/" role="menuitem">Blog</a>
+            <a class="dropdown-item" href="#" role="menuitem">Complaints</a>
+            <a class="dropdown-item" href="#" role="menuitem">Appeals</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-nav-cta">
+        <a href="/contact/" class="btn-nav-primary">CONTACT US</a>
+      </div>
+
+      {% include hamburger.html %}
     </div>
-    <div class="logo-mobile">
-      <a href="{{ site.baseurl }}">
-        <img height="{{ site.logo.mobile_height }}" alt="{{ site.title }}" src="{{ site.logo.mobile | relative_url }}" style="width: auto; display: block;" />
-      </a>
-    </div>
-    {% include main-menu.html %}
-    <div class="header-cta">
-      <a href="/contact/" class="btn btn-primary">Get a Quote</a>
-    </div>
-    {% include hamburger.html %}
-  </div>
-</div>
+  </nav>
+</header>

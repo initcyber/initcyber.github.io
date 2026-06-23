@@ -265,3 +265,248 @@
     }
   }
 }
+
+// ── New CMMC Services sections ────────────────────────────────────────────────
+
+.services-offerings {
+  padding: 96px 0;
+  background: $white;
+  border-top: 1px solid $line;
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    @include media-breakpoint-up(lg) { padding: 0 80px; }
+  }
+}
+
+.services-offerings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 48px;
+
+  .section-subheading { margin-bottom: 0; }
+}
+
+.cmmc-levels {
+  padding: 96px 0;
+  background: $surface-container-low;
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    @include media-breakpoint-up(lg) { padding: 0 80px; }
+  }
+}
+
+.cmmc-levels-header {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 48px;
+}
+
+.cmmc-levels-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+
+  @include media-breakpoint-up(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cmmc-level-card {
+  background: $white;
+  border: 1px solid $line;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: border-color 0.2s;
+  position: relative;
+  overflow: hidden;
+
+  &:hover { border-color: $secondary; }
+}
+
+.cmmc-level-card--featured {
+  background: $primary;
+  border-color: $primary;
+
+  h3 { color: #ffffff; }
+  p { color: rgba(255,255,255,0.8); }
+
+  .cmmc-level-list li { color: #ffffff; }
+  .cmmc-level-list .material-symbols-outlined { color: #ffffff; }
+
+  &:hover { border-color: $secondary; }
+}
+
+.cmmc-level-featured-badge {
+  position: absolute;
+  top: 0; right: 0;
+  width: 48px; height: 48px;
+  background: $secondary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.cmmc-level-code {
+  font-family: $font-family-mono;
+  font-size: 12px;
+  color: $secondary;
+  letter-spacing: 0.05em;
+}
+
+.cmmc-level-name {
+  font-size: 22px;
+  font-weight: 500;
+  color: $primary;
+  margin: 0;
+}
+
+.cmmc-level-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: $font-family-mono;
+    font-size: 13px;
+    color: $primary;
+  }
+
+  .material-symbols-outlined { font-size: 18px; color: $primary; }
+}
+
+.compliance-risk {
+  padding: 96px 0;
+  background: $primary;
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    @include media-breakpoint-up(lg) { padding: 0 80px; }
+  }
+}
+
+.compliance-risk-grid {
+  display: grid;
+  gap: 48px;
+
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+}
+
+.risk-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.risk-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 16px;
+  background: $primary-container;
+
+  p { color: rgba(255,255,255,0.75); font-size: 15px; line-height: 1.5; margin: 4px 0 0; }
+}
+
+.risk-item--warning { border-left: 4px solid $status-warning; }
+.risk-item--error   { border-left: 4px solid #ba1a1a; }
+
+.risk-icon { font-size: 22px; margin-top: 2px; flex-shrink: 0; }
+.risk-item--warning .risk-icon { color: $status-warning; }
+.risk-item--error .risk-icon   { color: #ef5350; }
+
+.risk-label {
+  font-size: 12px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: 0.05em; color: #ffffff; margin-bottom: 4px;
+}
+
+.compliance-risk-display {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid $primary-container;
+  padding: 32px;
+}
+
+.risk-display-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.risk-display-code {
+  font-family: $font-family-mono;
+  font-size: 13px;
+  color: rgba(255,255,255,0.7);
+}
+
+.risk-display-badge {
+  background: $secondary;
+  color: #ffffff;
+  font-family: $font-family-mono;
+  font-size: 11px;
+  padding: 4px 8px;
+  font-weight: 600;
+}
+
+.risk-progress-bar {
+  height: 8px;
+  background: $primary-container;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.risk-progress-fill {
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  background: $secondary;
+}
+
+.risk-progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-family: $font-family-mono;
+  font-size: 12px;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 24px;
+}
+
+.risk-modules {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.risk-module {
+  height: 48px;
+  border: 1px solid $primary-container;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-family-mono;
+  font-size: 11px;
+  color: rgba(255,255,255,0.5);
+}
+
+.risk-module--active { border-color: $secondary; color: $secondary; }

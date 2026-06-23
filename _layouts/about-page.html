@@ -3,133 +3,159 @@ layout: default
 bodyClass: "page-about"
 ---
 
-{% include mini-hero.html %}
-
-<!-- Our Journey -->
-<section class="about-journey">
+<!-- About Hero -->
+<section class="page-hero page-hero--light">
+  <div class="hero-dot-grid" aria-hidden="true"></div>
   <div class="container">
-    <div class="row align-items-center">
-      <div class="col-12 col-md-6 about-journey-text">
-        <span class="section-tag">Our Mission</span>
-        <h2 class="section-heading">A Decade of Vigilance in National Security.</h2>
-        <p>Founded by former Department of Defense intelligence officers and elite systems architects, Init Cyber emerged from a need to elevate defense-industry cybersecurity from a checkbox exercise to a mission-critical discipline.</p>
-        <p>Today, we sit at the intersection of rigorous compliance frameworks and operational security. Having successfully guided organizations through hundreds of CMMC assessments, our approach is defined by mathematical precision and bureaucratic rigor.</p>
-        <div class="about-journey-stats">
-          <div class="about-stat">
-            <div class="about-stat-number">200+</div>
-            <div class="about-stat-label">Audits Completed</div>
+    <div class="page-hero-content">
+      <span class="hero-eyebrow"><span class="hero-eyebrow-line" aria-hidden="true"></span>Our Mission</span>
+      <h1 class="page-hero-heading">Architects of National Security Compliance.</h1>
+      <p class="page-hero-desc">Init Cyber is a specialized cybersecurity consulting firm dedicated to securing the Defense Industrial Base (DIB). We bridge the gap between complex CMMC requirements and technical execution.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Start Secure Philosophy -->
+<section class="about-philosophy">
+  <div class="container">
+    <div class="philosophy-grid">
+      <div class="philosophy-text">
+        <h2 class="section-heading">The 'Start Secure' Philosophy</h2>
+        <p>Founded by veteran security auditors, Init Cyber was built on a simple premise: compliance is not a checkbox; it is the natural byproduct of a secure architecture. We pioneered the <strong>Start Secure</strong> methodology to replace reactive patching with proactive design.</p>
+        <p>Our history is rooted in high-stakes defense contracting. We saw firsthand how small and medium-sized firms struggled with the weight of DFARS and CMMC regulations. We founded Init Cyber to provide the precision-engineered solutions these critical infrastructure partners need.</p>
+        <div class="philosophy-stats">
+          <div class="philosophy-stat">
+            <div class="philosophy-stat-number">100%</div>
+            <div class="philosophy-stat-label">Audit Success Rate</div>
           </div>
-          <div class="about-stat">
-            <div class="about-stat-number">100%</div>
-            <div class="about-stat-label">First-Attempt Pass Rate</div>
+          <div class="philosophy-stat">
+            <div class="philosophy-stat-number">50+</div>
+            <div class="philosophy-stat-label">DIB Partners</div>
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-6">
-        <div class="about-journey-images">
-          <img src="{{ '/images/austin-distel-nGc5RT2HmF0-unsplash.jpg' | relative_url }}" alt="Our team at work" />
-          <img src="{{ '/images/thom-holmes-Lrfw0U_o9I0-unsplash.jpg' | relative_url }}" alt="Cybersecurity consulting" />
-          <img src="{{ '/images/austin-distel-nGc5RT2HmF0-unsplash.jpg' | relative_url }}" alt="CMMC compliance" />
+      <div class="philosophy-card blueprint-border">
+        <div class="philosophy-card-item">
+          <div class="philosophy-card-icon"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">shield</span></div>
+          <div>
+            <h3 class="philosophy-card-title">Defensive Engineering</h3>
+            <p>Building security into the hardware and software layers from day one.</p>
+          </div>
+        </div>
+        <div class="philosophy-card-item">
+          <div class="philosophy-card-icon"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">account_tree</span></div>
+          <div>
+            <h3 class="philosophy-card-title">Technical Rigor</h3>
+            <p>Unwavering commitment to documentation and evidence-based compliance.</p>
+          </div>
+        </div>
+        <div class="philosophy-card-item">
+          <div class="philosophy-card-icon"><span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;">verified_user</span></div>
+          <div>
+            <h3 class="philosophy-card-title">DIB Stewardship</h3>
+            <p>Protecting the integrity of the supply chain that powers our national defense.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Core Values -->
-<section class="about-values">
+<!-- Leadership -->
+<section class="about-leadership">
   <div class="container">
-    <span class="section-tag">The Architecture of Trust</span>
-    <h2 class="section-heading">Our Core Values</h2>
-    <div class="values-grid">
-      <div class="value-item">
-        <div class="value-icon"><i class="fas fa-calculator"></i></div>
-        <h4>Mathematical Precision</h4>
-        <p>Every control gap, risk score, and remediation priority is quantified — not estimated. We bring data discipline to every engagement.</p>
+    <div class="about-leadership-header">
+      <h2 class="section-heading text-center">Our Core Technical Leadership</h2>
+      <p class="section-subheading text-center">Guided by industry veterans with decades of experience in NSA frameworks, FedRAMP, and CMMC requirements.</p>
+    </div>
+    <div class="leadership-grid">
+      <div class="leadership-card">
+        <div class="leadership-card-image">
+          <span class="material-symbols-outlined leadership-card-icon">security</span>
+          <span class="leadership-card-uid">UID: IC-001</span>
+        </div>
+        <div class="leadership-card-body">
+          <h4 class="leadership-card-name">Chief Auditor</h4>
+          <p class="leadership-card-title-label">CMMC Licensed Professional</p>
+          <p>Lead strategist for Level 2 and Level 3 certifications with 15+ years in federal information assurance.</p>
+        </div>
       </div>
-      <div class="value-item">
-        <div class="value-icon"><i class="fas fa-scale-balanced"></i></div>
-        <h4>Regulatory Rigor</h4>
-        <p>We hold ourselves to the same standard assessors do. No shortcuts, no scope carve-outs, no compliance theater.</p>
+      <div class="leadership-card">
+        <div class="leadership-card-image">
+          <span class="material-symbols-outlined leadership-card-icon">terminal</span>
+          <span class="leadership-card-uid">UID: IC-002</span>
+        </div>
+        <div class="leadership-card-body">
+          <h4 class="leadership-card-name">Head of Engineering</h4>
+          <p class="leadership-card-title-label">Infrastructure Architect</p>
+          <p>Expert in GCC High migrations and secure enclave design for sensitive defense data.</p>
+        </div>
       </div>
-      <div class="value-item">
-        <div class="value-icon"><i class="fas fa-eye"></i></div>
-        <h4>Absolute Transparency</h4>
-        <p>You will always know exactly where you stand — gaps, risks, timelines, and costs — presented plainly without spin.</p>
-      </div>
-      <div class="value-item">
-        <div class="value-icon"><i class="fas fa-shield-halved"></i></div>
-        <h4>Adaptive Vigilance</h4>
-        <p>The threat landscape and the CMMC ruleset both evolve. Our programs are designed to adapt so your certification doesn't expire with the regulations.</p>
+      <div class="leadership-card">
+        <div class="leadership-card-image">
+          <span class="material-symbols-outlined leadership-card-icon">policy</span>
+          <span class="leadership-card-uid">UID: IC-003</span>
+        </div>
+        <div class="leadership-card-body">
+          <h4 class="leadership-card-name">Governance Lead</h4>
+          <p class="leadership-card-title-label">Compliance Director</p>
+          <p>Specializing in NIST SP 800-171 gap analysis and POA&amp;M management for enterprise primes.</p>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Meet the Team -->
-<section class="about-team" id="team">
+<!-- Bento Stats -->
+<section class="home-bento home-bento--bordered">
   <div class="container">
-    <span class="section-tag">Our People</span>
-    <h2 class="section-heading">Unrivaled Expertise in Cybersecurity and Federal Defense.</h2>
-    <div class="team-grid">
-      {% assign team_photos = "images/team/joseph-gonzalez-399972-unsplash.jpg,images/team/michael-dam-258165-unsplash.jpg,images/team/nonsap-visuals-kMJp7620W6U-unsplash.jpg" | split: "," %}
-      {% assign sorted_team = site.team | sort: 'weight' | limit: 3 %}
-      {% for member in sorted_team %}
-      {% assign photo = team_photos[forloop.index0] %}
-      <div class="team-card">
-        <img class="team-card-photo" src="{{ photo | relative_url }}" alt="{{ member.title }}" />
-        <h3>{{ member.title }}</h3>
-        <span>{{ member.jobtitle }}</span>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<!-- Testimonials -->
-<section class="about-testimonials">
-  <div class="container">
-    <h2 class="section-heading text-center">Hear From Those We've Helped</h2>
-    <div class="row testimonials-grid">
-      <div class="col-12 col-md-4">
-        <div class="testimonial-card">
-          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <blockquote>"Working with Init Cyber was the best decision we made for our CMMC journey. Their expertise is unmatched."</blockquote>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">AN</div>
-            <div><strong>Alex N.</strong><span>Director, Defense Systems Inc.</span></div>
-          </div>
+    <div class="bento-grid">
+      <div class="bento-main blueprint-border">
+        <h2 class="bento-main-heading">Unwavering Standards for Global Defense.</h2>
+        <div class="bento-main-footer">
+          <span class="bento-main-line" aria-hidden="true"></span>
+          <span class="bento-code-label">ISO/IEC 27001 ALIGNED</span>
         </div>
       </div>
-      <div class="col-12 col-md-4">
-        <div class="testimonial-card">
-          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <blockquote>"Our CMMC compliance came through right on schedule, and we retained our DoD contract. Init Cyber delivered."</blockquote>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">MK</div>
-            <div><strong>Mark K.</strong><span>CEO, Tactical Solutions LLC</span></div>
-          </div>
-        </div>
+      <div class="bento-stat">
+        <span class="material-symbols-outlined bento-stat-icon">verified</span>
+        <div class="bento-stat-number">100%</div>
+        <div class="bento-stat-label">Regulatory Alignment</div>
       </div>
-      <div class="col-12 col-md-4">
-        <div class="testimonial-card">
-          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-          <blockquote>"We appreciate the professionalism and dedication. Your support made CMMC compliance achievable for our team."</blockquote>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">MB</div>
-            <div><strong>Monica B.</strong><span>IT Manager, Aero Components</span></div>
-          </div>
+      <div class="bento-stat">
+        <span class="material-symbols-outlined bento-stat-icon">database</span>
+        <div class="bento-stat-number">Zero</div>
+        <div class="bento-stat-label">Post-Audit Findings</div>
+      </div>
+      <div class="bento-monitoring">
+        <div class="bento-code-label bento-monitoring-label">SYSTEM_REPORT_04</div>
+        <div class="bento-bars">
+          <div class="bento-bar bento-bar--muted"></div>
+          <div class="bento-bar bento-bar--accent" style="width:75%"></div>
+          <div class="bento-bar bento-bar--muted" style="width:50%"></div>
+          <div class="bento-bar bento-bar--accent" style="width:83%"></div>
         </div>
+        <div class="bento-monitoring-title">Live Monitoring Capability</div>
+      </div>
+      <div class="bento-careers">
+        <div class="bento-careers-text">
+          <h3 class="bento-careers-heading">Join the Defense Excellence Network</h3>
+          <p>We are actively seeking top-tier cybersecurity consultants and compliance engineers.</p>
+        </div>
+        <a href="#" class="btn-outline-primary">VIEW CAREERS</a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section class="about-cta">
-  <div class="about-cta-inner">
-    <h2>Ready to Fortify Your Operations?</h2>
-    <p>Connect with our compliance architects for a preliminary gap analysis and strategic consultation. No sales pitch — just a frank assessment of where you stand.</p>
-    <a href="/contact/" class="btn btn-cta">Contact Us</a>
+<section class="home-cta">
+  <div class="container">
+    <h2 class="home-cta-heading">Ready to Start Secure?</h2>
+    <p class="home-cta-sub">Our team is standing by to evaluate your current compliance posture and design a roadmap for certification.</p>
+    <div class="home-cta-actions">
+      <a href="/contact/" class="btn-hero-primary">BOOK A CONSULTATION</a>
+      <a href="/services/" class="btn-hero-ghost">VIEW COMPLIANCE GUIDE</a>
+    </div>
   </div>
 </section>
