@@ -101,8 +101,6 @@
   flex-direction: column;
   gap: 16px;
   align-items: flex-start;
-
-  @include media-breakpoint-up(md) { align-items: flex-end; }
 }
 
 .footer-icons {
