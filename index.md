@@ -1,5 +1,5 @@
 ---
-title: "CMMC Compliance Made Simple"
+title: "CMMC Consulting and Assessments - Atlanta, GA | Init Cyber"
 layout: home
 description: "Expert CMMC consulting and compliance services for defense contractors. Start Secure with Init Cyber."
 intro_image: "images/illustrations/pointing.svg"
