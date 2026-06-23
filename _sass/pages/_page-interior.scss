@@ -6,7 +6,7 @@
 }
 
 .interior-body {
-  max-width: 760px;
+  max-width: 960px;
 }
 
 .interior-section {
@@ -79,4 +79,53 @@
       margin-top: 8px;
     }
   }
+}
+
+// Service-style card grid for interior pages
+.interior-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-bottom: 48px;
+
+  @include media-breakpoint-up(md) { grid-template-columns: 1fr 1fr; }
+}
+
+.interior-card {
+  background: $surface-container-low;
+  border: 1px solid $line;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: border-color 0.2s;
+
+  &:hover { border-color: $secondary; }
+
+  h3 {
+    font-family: $font-family-heading;
+    font-size: 18px;
+    font-weight: 600;
+    color: $primary;
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  p {
+    font-size: 15px;
+    color: $on-surface-variant;
+    line-height: 1.7;
+    margin: 0;
+  }
+}
+
+.interior-card-icon {
+  width: 44px;
+  height: 44px;
+  background: $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .material-symbols-outlined { font-size: 22px !important; color: $secondary-container; }
 }
