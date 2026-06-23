@@ -71,17 +71,6 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-
-  a, span { 
-    font-size: 15px;
-    color: rgba(255,255,255,0.55);
-    text-decoration: none;
-    transition: color 0.2s;
-
-    &:hover {
-      color: #ffffff;
-      text-decoration: none;
-    }
   }
 }
 
@@ -150,6 +139,13 @@
 .footer-bottom-right {
   display: flex;
   gap: 24px;
+  align-items: center;
+}
+
+.footer-bottom .footer-copyright {
+  flex: 1;
+  text-align: center;
+  margin: 0;
 }
 
 // Clear old footer class for backward compat
