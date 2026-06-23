@@ -67,5 +67,5 @@ bodyClass: page-interior
     <h3>Not Ready for a Formal Assessment?</h3>
     <p>Init Cyber offers mock assessments for organizations preparing for CMMC Level 2 certification. A mock assessment mirrors the official process — evidence review, control testing, and findings documentation — so you know exactly where you stand before the formal engagement begins.</p>
     <p>In accordance with CMMC program conflict-of-interest requirements, mock assessment engagements are conducted separately from certification assessment clients. One firm cannot do both for the same organization.</p>
-    <a href="/contact/" class="btn-hero-cta"">INQUIRE ABOUT A MOCK ASSESSMENT</a>
+    <a href="/contact/" class="btn-hero-cta">INQUIRE ABOUT A MOCK ASSESSMENT</a>
   </div>
