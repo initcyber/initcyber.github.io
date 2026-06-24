@@ -81,6 +81,30 @@
   }
 }
 
+// Callout box
+.interior-callout {
+  background: $primary;
+  padding: 32px;
+  margin-bottom: 48px;
+
+  h3 {
+    font-family: $font-family-heading;
+    font-size: 18px;
+    font-weight: 600;
+    color: $secondary-container;
+    margin: 0 0 12px;
+  }
+
+  p {
+    font-size: 15px;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.7;
+    margin: 0;
+
+    a { color: $secondary-container; &:hover { color: #ffffff; } }
+  }
+}
+
 // Service-style card grid for interior pages
 .interior-cards-grid {
   display: grid;
