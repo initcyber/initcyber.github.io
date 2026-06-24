@@ -233,92 +233,83 @@
   }
 }
 
-// ── New About page sections ───────────────────────────────────────────────────
+// ── Leadership Bio Section ────────────────────────────────────────────────────
 
 .about-leadership {
   padding: 96px 0;
   background: $white-offset;
   border-top: 1px solid $line;
+}
 
-  .container {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 20px;
-    @include media-breakpoint-up(lg) { padding: 0 80px; }
+.leadership-bio {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+    gap: 32px;
   }
 }
 
-.about-leadership-header {
-  text-align: center;
-  margin-bottom: 64px;
-}
+.leadership-photo {
+  flex-shrink: 0;
+  width: 320px;
 
-.leadership-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
+  @include media-breakpoint-down(md) { width: 100%; max-width: 320px; }
 
-  @include media-breakpoint-up(md) {
-    grid-template-columns: repeat(3, 1fr);
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid $line;
   }
 }
 
-.leadership-card {
-  border: 1px solid $line;
-  background: $white-offset;
-  transition: border-color 0.3s;
-
-  &:hover { border-color: $primary; }
-}
-
-.leadership-card-image {
-  height: 240px;
-  background: $primary-container;
+.leadership-photo-placeholder {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: $primary;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  overflow: hidden;
+  border: 1px solid $line;
+
+  .material-symbols-outlined {
+    font-size: 80px !important;
+    color: $on-primary-container;
+    opacity: 0.3;
+  }
 }
 
-.leadership-card-icon {
-  font-size: 100px !important;
-  color: $primary;
-  opacity: 0.2;
-  transition: transform 0.4s ease;
+.leadership-bio-content {
+  flex: 1;
+  min-width: 0;
 
-  .leadership-card:hover & { transform: scale(1.1); }
+  .section-heading { margin-bottom: 8px; }
+
+  p {
+    font-size: 16px;
+    color: $on-surface-variant;
+    line-height: 1.75;
+    margin: 0 0 16px;
+
+    &:last-child { margin-bottom: 0; }
+  }
 }
 
-.leadership-card-uid {
-  position: absolute;
-  bottom: 12px;
-  left: 12px;
-  font-family: $font-family-mono;
-  font-size: 12px;
-  color: $on-primary-container;
-  background: rgba(0,24,59,0.2);
-  padding: 3px 8px;
-}
-
-.leadership-card-body {
-  padding: 28px;
-
-  p { font-size: 15px; color: $on-surface-variant; line-height: 1.6; margin: 0; }
-}
-
-.leadership-card-name {
-  font-size: 22px;
-  font-weight: 500;
-  color: $primary;
-  margin: 0 0 6px;
-}
-
-.leadership-card-title-label {
-  font-size: 13px;
+.leadership-role {
+  font-size: 14px !important;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: $secondary;
-  margin: 0 0 16px;
+  color: $secondary !important;
+  margin: 0 0 4px !important;
+}
+
+.leadership-certs {
+  font-family: $font-family-mono;
+  font-size: 13px !important;
+  color: $steel !important;
+  margin: 0 0 24px !important;
 }
