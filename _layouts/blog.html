@@ -12,7 +12,8 @@ bodyClass: "page-blog"
       <!-- Main content -->
       <div class="col-12 col-md-8 blog-main">
 
-        <!-- Featured post -->
+        <!-- Featured post (only on first page) -->
+        {% if paginator.page == 1 %}
         {% assign featured = site.posts.first %}
         {% if featured %}
         <div class="blog-featured">
@@ -20,28 +21,57 @@ bodyClass: "page-blog"
           {% if featured.image %}
           <img class="blog-featured-image" src="{{ featured.image | relative_url }}" alt="{{ featured.title }}" />
           {% else %}
-          <div class="blog-featured-image-placeholder"><i class="fas fa-newspaper"></i></div>
+          <div class="blog-featured-image-placeholder"><span class="material-symbols-outlined" style="font-size:48px;color:#c4c6d0;">article</span></div>
           {% endif %}
           <h2><a href="{{ featured.url | relative_url }}">{{ featured.title }}</a></h2>
           <p class="blog-featured-meta">{{ featured.date | date: "%B %-d, %Y" }} &mdash; {{ featured.categories | join: ", " }}</p>
           <p>{{ featured.excerpt | strip_html | truncate: 220 }}</p>
-          <a href="{{ featured.url | relative_url }}" class="btn btn-primary">Read Article</a>
+          <a href="{{ featured.url | relative_url }}" class="btn-hero-primary" style="font-size:13px;padding:12px 24px;">Read Article</a>
         </div>
+        {% endif %}
         {% endif %}
 
         <!-- Archive grid -->
-        <span class="section-tag">All Articles</span>
-        <h2 class="section-heading" style="margin-bottom: 28px;">Discover Insights into CMMC Compliance</h2>
+        <span class="section-tag">{% if paginator.page == 1 %}All Articles{% else %}Page {{ paginator.page }}{% endif %}</span>
+        <h2 class="section-heading" style="margin-bottom: 28px;">{% if paginator.page == 1 %}Discover Insights into CMMC Compliance{% else %}More Articles{% endif %}</h2>
         <div class="blog-archive-grid">
-          {% for post in site.posts offset: 1 %}
+          {% for post in paginator.posts %}
+          {% if paginator.page == 1 and forloop.first %}{% continue %}{% endif %}
           <div class="blog-archive-card">
             <span class="blog-card-date">{{ post.date | date: "%b %-d, %Y" }}</span>
             <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
             <p>{{ post.excerpt | strip_html | truncate: 100 }}</p>
-            <a href="{{ post.url | relative_url }}" class="blog-card-link">Read More <i class="fas fa-arrow-right"></i></a>
+            <a href="{{ post.url | relative_url }}" class="blog-card-link">Read More <span class="material-symbols-outlined" style="font-size:14px;">arrow_forward</span></a>
           </div>
           {% endfor %}
         </div>
+
+        <!-- Pagination -->
+        {% if paginator.total_pages > 1 %}
+        <nav class="blog-pagination" aria-label="Blog pagination">
+          {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-btn pagination-prev">
+            <span class="material-symbols-outlined">chevron_left</span> Newer
+          </a>
+          {% else %}
+          <span class="pagination-btn pagination-prev pagination-disabled">
+            <span class="material-symbols-outlined">chevron_left</span> Newer
+          </span>
+          {% endif %}
+
+          <span class="pagination-info">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+          {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-btn pagination-next">
+            Older <span class="material-symbols-outlined">chevron_right</span>
+          </a>
+          {% else %}
+          <span class="pagination-btn pagination-next pagination-disabled">
+            Older <span class="material-symbols-outlined">chevron_right</span>
+          </span>
+          {% endif %}
+        </nav>
+        {% endif %}
 
       </div>
 
@@ -52,24 +82,23 @@ bodyClass: "page-blog"
           <h4>Search</h4>
           <div class="sidebar-search">
             <input type="text" placeholder="Search articles..." />
-            <button type="button"><i class="fas fa-search"></i></button>
+            <button type="button"><span class="material-symbols-outlined" style="font-size:18px;">search</span></button>
           </div>
         </div>
 
         <div class="sidebar-widget">
           <h4>Categories</h4>
           <ul class="sidebar-categories">
-            <li><a href="#">CMMC Compliance <span>{{ site.posts | size }}</span></a></li>
-            <li><a href="#">Cybersecurity <span>3</span></a></li>
-            <li><a href="#">DoD Contracting <span>2</span></a></li>
-            <li><a href="#">Risk Management <span>2</span></a></li>
+            {% for cat in site.categories %}
+            <li><a href="#">{{ cat[0] }} <span>{{ cat[1].size }}</span></a></li>
+            {% endfor %}
           </ul>
         </div>
 
         <div class="sidebar-widget">
           <h4>Recent Posts</h4>
           <ul class="sidebar-recent">
-            {% for post in site.posts limit: 4 %}
+            {% for post in site.posts limit: 5 %}
             <li>
               <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
               <span>{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -83,17 +112,3 @@ bodyClass: "page-blog"
     </div>
   </div>
 </div>
-
-<!-- Subscribe -->
-<section class="blog-subscribe">
-  <div class="container">
-    <div class="blog-subscribe-inner">
-      <h2 class="section-heading">Stay Ahead of the Threat Landscape.</h2>
-      <p>Get our latest CMMC compliance analysis and cybersecurity intelligence delivered directly to your inbox. Unsubscribe at any time.</p>
-      <form class="subscribe-form" action="#" method="post">
-        <input type="email" name="email" placeholder="Enter your email address" required />
-        <button type="submit" class="btn btn-primary">Subscribe</button>
-      </form>
-    </div>
-  </div>
-</section>

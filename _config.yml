@@ -18,6 +18,11 @@ collections:
 defaults:
   - scope:
       path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
       type: "team"
     values:
       layout: "team"
@@ -25,8 +30,12 @@ defaults:
 sass:
   style: compressed # possible values: nested expanded compact compressed
 
+paginate: 9
+paginate_path: "/blog/page/:num/"
+
 plugins:
   - jekyll-environment-variables
+  - jekyll-paginate
 
 exclude:
   - Gemfile
