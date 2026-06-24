@@ -2,7 +2,7 @@
 title: "No CISO, No Problem: How IT Leaders Can Wear the CISO Hat for CMMC 2.0"
 date: 2025-12-10
 image: "images/posts/12-10-2025/no-ciso-no-problem-how-it-leaders-can-wear-the-ciso-hat-for-cmmc-2-0.jpg"
-categories: ["CMMC"]
+categories: ["Small Business"]
 excerpt: "Many small and midsize defense contractors will never hire a full-time Chief Information Security Officer, but CMMC 2.0 still expects them to behave like mature, well-governed security organizations...."
 ---
 

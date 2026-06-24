@@ -2,7 +2,7 @@
 title: "The Brutal Truth About Your CMMC Gap Analysis (And Why -203 is a Real Score)"
 date: 2025-12-03
 image: "images/posts/12-03-2025/the-brutal-truth-about-your-cmmc-gap-analysis-and-why-203-is-a-real-score.png"
-categories: ["CMMC"]
+categories: ["Assessment Prep"]
 excerpt: "If you are a defense contractor, you probably think your company is “pretty secure.” You have a firewall. You run antivirus software. You have passwords on everything."
 ---
 

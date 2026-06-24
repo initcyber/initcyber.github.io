@@ -2,7 +2,7 @@
 title: "Competitive Advantage Through CMMC Compliance"
 date: 2025-11-01
 image: "images/posts/11-01-2025/competitive-advantage-through-cmmc-compliance.jpg"
-categories: ["CMMC"]
+categories: ["Compliance Strategy"]
 excerpt: "Getting CMMC certified early is more than checking off a regulatory box—it’s a way to give your company an immediate and lasting edge in the defense contracting..."
 ---
 

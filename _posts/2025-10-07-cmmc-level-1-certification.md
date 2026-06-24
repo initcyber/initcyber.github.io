@@ -2,7 +2,7 @@
 title: "CMMC Level 1 Certification"
 date: 2025-10-07
 image: "images/posts/10-07-2025/cmmc-level-1-certification.png"
-categories: ["CMMC"]
+categories: ["CMMC Fundamentals"]
 excerpt: "As of Today, Init Cyber is now CMMC Level 1 Certified!"
 ---
 

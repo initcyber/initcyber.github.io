@@ -2,7 +2,7 @@
 title: "CMMC as a Continuous Process, Not a Project"
 date: 2025-10-14
 image: "images/posts/10-14-2025/cmmc-as-a-continuous-process-not-a-project.png"
-categories: ["CMMC"]
+categories: ["Compliance Strategy"]
 excerpt: "If you’re working with the Department of Defense or in any part of the defense supply chain, you’ve likely heard about the Cybersecurity Maturity Model Certification, or CMMC. For many, it still..."
 ---
 

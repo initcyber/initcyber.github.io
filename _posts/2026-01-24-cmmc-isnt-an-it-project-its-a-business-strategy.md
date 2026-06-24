@@ -2,7 +2,7 @@
 title: "CMMC isn’t an IT Project – It’s a Business Strategy"
 date: 2026-01-24
 image: "images/posts/01-24-2026/cmmc-isnt-an-it-project-its-a-business-strategy.png"
-categories: ["CMMC"]
+categories: ["Compliance Strategy"]
 excerpt: "If you’re a defense contractor, CMMC has been on the horizon for a while. In 2026, it’s no longer “coming soon.” It’s becoming a condition of doing business."
 ---
 

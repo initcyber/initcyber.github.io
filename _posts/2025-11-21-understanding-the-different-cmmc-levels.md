@@ -2,7 +2,7 @@
 title: "Understanding the Different CMMC Levels"
 date: 2025-11-21
 image: "images/posts/11-21-2025/the-top-10-mistakes-companies-make-with-cmmc.png"
-categories: ["CMMC"]
+categories: ["CMMC Fundamentals"]
 excerpt: "If you’re working with the Department of Defense or in the defense industrial base, understanding the different CMMC levels is key to meeting compliance and protecting sensitive information. The..."
 ---
 

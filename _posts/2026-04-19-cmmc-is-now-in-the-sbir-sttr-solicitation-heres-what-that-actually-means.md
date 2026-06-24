@@ -2,7 +2,7 @@
 title: "CMMC Is Now in the SBIR/STTR Solicitation. Here’s What That Actually Means."
 date: 2026-04-19
 image: "images/posts/04-19-2026/cmmc-is-now-in-the-sbir-sttr-solicitation-heres-what-that-actually-means.png"
-categories: ["CMMC"]
+categories: ["DFARS & Regulatory"]
 excerpt: "There’s been a lot of noise on LinkedIn this week about the Army and Navy making CMMC a prerequisite for SBIR/STTR funding. Some of it has been accurate. Some of it has been vague enough to generate..."
 ---
 

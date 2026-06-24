@@ -2,7 +2,7 @@
 title: "Getting CMMC Certified for a DIB Business: A Guide"
 date: 2025-11-09
 image: "images/posts/11-09-2025/getting-cmmc-certified-for-a-dib-business-a-guide.png"
-categories: ["CMMC"]
+categories: ["CMMC Fundamentals"]
 excerpt: "The Cybersecurity Maturity Model Certification (CMMC) is a mandatory requirement for Defense Industrial Base (DIB) companies that want to continue working on Department of Defense contracts. It..."
 ---
 

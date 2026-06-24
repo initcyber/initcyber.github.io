@@ -2,7 +2,7 @@
 title: "CMMC Implementation Update – November 10, 2025"
 date: 2025-10-22
 image: "images/posts/10-22-2025/cmmc-implementation-update-november-10-2025.png"
-categories: ["CMMC"]
+categories: ["DFARS & Regulatory"]
 excerpt: "After years of anticipation, the Department of Defense (DoD) officially begins enforcing the Cybersecurity Maturity Model Certification (CMMC) requirements as a mandatory condition in new defense..."
 ---
 

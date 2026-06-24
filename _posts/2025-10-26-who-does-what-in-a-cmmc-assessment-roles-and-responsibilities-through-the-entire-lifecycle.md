@@ -2,7 +2,7 @@
 title: "Who Does What in a CMMC Assessment: Roles and Responsibilities Through the Entire Lifecycle"
 date: 2025-10-26
 image: "images/posts/10-26-2025/who-does-what-in-a-cmmc-assessment-roles-and-responsibilities-through-the-entire-lifecycle.jpg"
-categories: ["CMMC"]
+categories: ["Assessment Prep"]
 excerpt: "Successfully navigating a Cybersecurity Maturity Model Certification (CMMC) assessment requires clear understanding of the personnel involved and their responsibilities across all phases of the..."
 ---
 

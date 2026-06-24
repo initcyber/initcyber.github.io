@@ -2,7 +2,7 @@
 title: "Use CMMC Level 1 to Build Your Foundation for Level 2"
 date: 2025-12-23
 image: "images/posts/12-23-2025/use-cmmc-level-1-to-build-your-foundation-for-level-2.png"
-categories: ["CMMC"]
+categories: ["CMMC Fundamentals"]
 excerpt: "The 48 CFR CMMC Acquisition Rule became effective on November 10, 2025. That date has come and gone. CMMC is no longer a “maybe” or a “future problem” for the Defense Industrial Base. It is here. For..."
 ---
 

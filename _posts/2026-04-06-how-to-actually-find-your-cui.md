@@ -2,7 +2,7 @@
 title: "How to Actually Find Your CUI"
 date: 2026-04-06
 image: "images/posts/04-06-2026/how-to-actually-find-your-cui.png"
-categories: ["CMMC", "NIST"]
+categories: ["Technical Implementation"]
 excerpt: "You probably think you know where your CUI is. Most contractors do. Most of them are wrong."
 ---
 

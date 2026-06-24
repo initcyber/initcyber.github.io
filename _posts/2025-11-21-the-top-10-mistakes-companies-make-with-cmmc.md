@@ -2,7 +2,7 @@
 title: "The Top 10 Mistakes Companies Make with CMMC"
 date: 2025-11-21
 image: "images/posts/11-21-2025/the-top-10-mistakes-companies-make-with-cmmc.png"
-categories: ["CMMC"]
+categories: ["Assessment Prep"]
 excerpt: "The Cybersecurity Maturity Model Certification (CMMC) has become a critical requirement for defense contractors looking to secure or maintain contracts with the Department of Defense. Despite its..."
 ---
 

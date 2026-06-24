@@ -2,7 +2,7 @@
 title: "How to Build a CMMC-Ready Conditional Access Policy"
 date: 2026-04-10
 image: "images/posts/04-10-2026/how-to-build-a-cmmc-ready-conditional-access-policy.png"
-categories: ["CMMC"]
+categories: ["Technical Implementation"]
 excerpt: "Conditional Access is where most DIY GCC High deployments fall apart. Contractors stand up the tenant, turn on MFA for a few admin accounts, and call it done. Then an assessor walks in and starts..."
 ---
 

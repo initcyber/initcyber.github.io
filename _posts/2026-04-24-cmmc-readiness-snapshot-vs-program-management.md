@@ -2,7 +2,7 @@
 title: "CMMC Readiness Snapshot vs Full Program Management: Which Do You Need"
 date: 2026-04-24
 image: "images/posts/04-24-2026/cmmc-readiness-snapshot-vs-program-management.png"
-categories: ["CMMC"]
+categories: ["Compliance Strategy"]
 excerpt: "*The right engagement depends on one question: do you know where you stand? If you do not have a current gap assessment, an accurate SPRS score, and a defined CUI boundary, start with the Readiness..."
 ---
 

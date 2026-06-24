@@ -2,7 +2,7 @@
 title: "3 Red Flags That Will Slow Your CMMC Assessment"
 date: 2026-03-25
 image: "images/posts/03-25-2026/3-red-flags-that-will-slow-your-cmmc-assessment.png"
-categories: ["CMMC"]
+categories: ["Assessment Prep"]
 excerpt: "A CMMC Level 2 assessment is not a short process on its own. Depending on the size and complexity of your environment, you are looking at weeks of preparation, active assessment activity, and..."
 ---
 

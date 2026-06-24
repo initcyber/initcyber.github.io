@@ -2,7 +2,7 @@
 title: "Navigating the Final CMMC Rule and Compliance Deadlines"
 date: 2025-11-08
 image: "images/posts/11-08-2025/navigating-the-final-cmmc-rule-and-compliance-deadlines.png"
-categories: ["CMMC"]
+categories: ["DFARS & Regulatory"]
 excerpt: "With the Department of Defense’s new final Cybersecurity Maturity Model Certification (CMMC) rule set to take effect on November 10, 2025, defense contractors face a critical juncture in..."
 ---
 

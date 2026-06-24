@@ -2,7 +2,7 @@
 title: "Incident Response in a Changing World: Navigating the Complexities of Data Privacy"
 date: 2024-09-11
 image: "images/posts/09-11-2024/incident-response-privacy.png"
-categories: ["Privacy"]
+categories: ["Privacy & GRC"]
 excerpt: "Incident Response in a Changing World: Navigating the Complexities of Data Privacy"
 ---
 

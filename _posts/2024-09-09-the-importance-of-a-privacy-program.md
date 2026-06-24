@@ -2,7 +2,7 @@
 title: "The importance of a Privacy Program"
 date: 2024-09-09
 image: "images/posts/09-09-2024/the-importance-of-a-privacy-program.png"
-categories: ["Privacy"]
+categories: ["Privacy & GRC"]
 excerpt: "In today’s digital world, businesses are gathering and storing huge amounts of personal information from customers, employees, and partners. However, this wealth of data also brings significant risks..."
 ---
 

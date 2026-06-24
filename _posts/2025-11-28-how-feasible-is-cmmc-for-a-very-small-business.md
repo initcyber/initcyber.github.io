@@ -2,7 +2,7 @@
 title: "How Feasible is CMMC for a Very Small Business?"
 date: 2025-11-28
 image: "images/posts/11-28-2025/how-feasible-is-cmmc-for-a-very-small-business.jpg"
-categories: ["CMMC", "NIST"]
+categories: ["Small Business"]
 excerpt: "Many very small businesses (VSB) in the Defense Industrial Base (DIB) worry that the Cybersecurity Maturity Model Certification (CMMC) is out of reach. The CMMC is a mandatory DoD program designed to..."
 ---
 

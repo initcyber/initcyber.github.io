@@ -2,7 +2,7 @@
 title: "What GCC High Doesn’t Cover"
 date: 2026-04-08
 image: "images/posts/04-08-2026/what-gcc-high-doesnt-cover.png"
-categories: ["CMMC", "NIST"]
+categories: ["Technical Implementation"]
 excerpt: "There’s a version of this conversation that happens constantly in the DIB. A contractor buys GCC High, gets their tenant stood up, turns on some security features, and concludes they’re CMMC..."
 ---
 

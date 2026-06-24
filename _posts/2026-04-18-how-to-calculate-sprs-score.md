@@ -2,7 +2,7 @@
 title: "How to Calculate Your SPRS Score Before Your Assessment"
 date: 2026-04-18
 image: "images/posts/04-18-2026/how-to-calculate-sprs-score.png"
-categories: ["CMMC"]
+categories: ["Assessment Prep"]
 excerpt: "*Your SPRS score is visible to every DoD contracting officer who pulls your record. Knowing what it should be before a C3PAO confirms it lets you make informed decisions about remediation spending..."
 ---
 

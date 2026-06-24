@@ -2,7 +2,7 @@
 title: "Microsoft 365 Business Premium Now Available for GCC High"
 date: 2025-11-05
 image: "images/posts/11-05-2025/microsoft-365-business-premium-now-available-for-gcc-high.jpg"
-categories: ["CMMC"]
+categories: ["Technical Implementation"]
 excerpt: "**Microsoft 365 Business Premium Now Available for GCC High**"
 ---
 

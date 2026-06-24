@@ -2,7 +2,7 @@
 title: "What CMMC Assessors Actually Look For"
 date: 2026-04-12
 image: "images/posts/04-12-2026/what-cmmc-assessors-actually-look-for.png"
-categories: ["CMMC", "NIST"]
+categories: ["Assessment Prep"]
 excerpt: "The C3PAO assessment process is not a mystery, but most contractors walk in underprepared because they spent all their time implementing controls and none of their time thinking about how to..."
 ---
 

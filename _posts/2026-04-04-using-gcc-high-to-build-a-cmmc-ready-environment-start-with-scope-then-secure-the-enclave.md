@@ -2,7 +2,7 @@
 title: "Using GCC High to Build a CMMC-Ready Environment: Start With Scope, Then Secure the Enclave"
 date: 2026-04-04
 image: "images/posts/04-04-2026/using-gcc-high-to-build-a-cmmc-ready-environment-start-with-scope-then-secure-the-enclave.png"
-categories: ["CMMC"]
+categories: ["Technical Implementation"]
 excerpt: "**Buying GCC High Won’t Make You CMMC Compliant**"
 ---
 

@@ -2,7 +2,7 @@
 title: "How Long Does CMMC Level 2 Certification Actually Take"
 date: 2026-04-16
 image: "images/posts/04-16-2026/how-long-cmmc-level-2-certification.png"
-categories: ["CMMC"]
+categories: ["Assessment Prep"]
 excerpt: "*The realistic answer is 6 to 18 months from a standing start. Where you land in that range depends on your current posture, how much remediation you need, and how fast your organization can execute..."
 ---
 

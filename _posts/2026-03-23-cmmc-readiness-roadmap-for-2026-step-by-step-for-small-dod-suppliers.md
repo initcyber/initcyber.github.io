@@ -1,7 +1,7 @@
 ---
 title: "CMMC Readiness Roadmap for 2026: Step-by-Step for Small DoD Suppliers"
 date: 2026-03-23
-categories: ["CMMC", "NIST"]
+categories: ["Compliance Strategy", "Small Business"]
 excerpt: "The rules changed. Under the final CMMC 2.0 rule, DoD contractors handling Federal Contract Information (FCI) or Controlled Unclassified Information (CUI) are required to meet specific cybersecurity..."
 ---
 

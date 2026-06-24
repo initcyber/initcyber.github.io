@@ -2,7 +2,7 @@
 title: "CMMC 2.0 Compliance Checklist and Best Practices"
 date: 2025-10-17
 image: "images/posts/10-17-2025/cmmc-2-0-compliance-checklist-and-best-practices.png"
-categories: ["CMMC"]
+categories: ["CMMC Fundamentals"]
 excerpt: "Achieving and maintaining CMMC 2.0 compliance requires a clear, step-by-step approach. With the latest updates to the requirements and DoD contract clauses, contractors need to understand what’s..."
 ---
 

@@ -2,7 +2,7 @@
 title: "Impact of CMMC on Defense Supply Chain Security"
 date: 2025-10-19
 image: "images/posts/10-19-2025/impact-of-cmmc-on-defense-supply-chain-security.png"
-categories: ["CMMC", "NIST"]
+categories: ["Compliance Strategy"]
 excerpt: "The Cybersecurity Maturity Model Certification (CMMC) is reshaping defense supply chain security in profound ways. At its core, CMMC aims to ensure that every link in the Defense Industrial Base..."
 ---
 

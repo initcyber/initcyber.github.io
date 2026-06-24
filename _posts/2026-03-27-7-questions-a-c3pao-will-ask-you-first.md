@@ -2,7 +2,7 @@
 title: "7 Questions a C3PAO Will Ask You First"
 date: 2026-03-27
 image: "images/posts/03-27-2026/7-questions-a-c3pao-will-ask-you-first.png"
-categories: ["CMMC"]
+categories: ["Assessment Prep"]
 excerpt: "Before a Certified Third-Party Assessment Organization (C3PAO) ever opens your System Security Plan or starts walking through your practices, they need to understand your environment at a basic..."
 ---
 

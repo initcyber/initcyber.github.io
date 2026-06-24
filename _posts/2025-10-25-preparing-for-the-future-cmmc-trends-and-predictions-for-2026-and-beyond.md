@@ -2,7 +2,7 @@
 title: "Preparing for the Future: CMMC Trends and Predictions for 2026 and Beyond"
 date: 2025-10-25
 image: "images/posts/10-25-2025/preparing-for-the-future-cmmc-trends-and-predictions-for-2026-and-beyond.png"
-categories: ["CMMC"]
+categories: ["DFARS & Regulatory"]
 excerpt: "If you’re involved in the defense contracting world, you know how fast things change when it comes to cybersecurity requirements like CMMC. The rules that apply today might look very different in..."
 ---
 

@@ -2,7 +2,7 @@
 title: "CMMC Level 1 vs Level 2: What’s the Actual Difference for Subcontractors"
 date: 2026-04-14
 image: "images/posts/04-14-2026/cmmc-level-1-vs-level-2-subcontractors.png"
-categories: ["CMMC"]
+categories: ["CMMC Fundamentals"]
 excerpt: "*Level 1 is a 17-control annual self-attestation. Level 2 is a 110-control requirement that most DoD subcontractors handling CUI will need to pass through a Certified Third-Party Assessment..."
 ---
 

@@ -2,7 +2,7 @@
 title: "CMMC Level 2 Certification: What Multi-Location Businesses Handling CUI Need to Know"
 date: 2026-03-11
 image: "images/posts/03-11-2026/cmmc-level-2-certification-what-multi-location-businesses-handling-cui-need-to-know.png"
-categories: ["CMMC"]
+categories: ["Compliance Strategy"]
 excerpt: "If your company prints controlled defense information across multiple facilities, you face a unique set of requirements"
 ---
 

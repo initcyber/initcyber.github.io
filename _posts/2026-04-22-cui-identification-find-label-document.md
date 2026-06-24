@@ -2,7 +2,7 @@
 title: "CUI Identification: How to Find It, Label It, and Document It"
 date: 2026-04-22
 image: "images/posts/04-22-2026/cui-identification-find-label-document.png"
-categories: ["CMMC"]
+categories: ["Technical Implementation"]
 excerpt: "*You cannot protect what you have not identified. CUI identification is the foundational step before any other CMMC work makes sense. If you do not know where your CUI is, your SSP boundary is a..."
 ---
 

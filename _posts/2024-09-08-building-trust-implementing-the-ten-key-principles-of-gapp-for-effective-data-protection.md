@@ -2,7 +2,7 @@
 title: "Building Trust: Implementing the Ten Key Principles of GAPP for Effective Data Protection"
 date: 2024-09-08
 image: "images/posts/09-08-2024/building-trust-implementing-the-ten-key-principles-of-gapp-for-effective-data-protection.png"
-categories: ["Privacy"]
+categories: ["Privacy & GRC"]
 excerpt: "In today’s digital age, protecting personal information has become a top priority for organizations and individuals alike. With the rise of data breaches and cyber attacks, it’s more important than..."
 ---
 
