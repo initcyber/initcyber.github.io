@@ -50,12 +50,17 @@
 .post-featured-image {
   background: $white-offset;
   border-bottom: 1px solid $line;
+  padding: 32px 0;
 
   img {
     display: block;
-    width: 100%;
-    max-height: 480px;
-    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 66.666%;
+    }
   }
 }
 
