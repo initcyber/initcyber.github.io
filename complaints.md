@@ -13,7 +13,7 @@ bodyClass: page-interior
 
 <div class="interior-callout">
   <h3>Complaints vs. Appeals</h3>
-  <p>A complaint is an expression of dissatisfaction with Init Cyber's services, conduct, or processes. A challenge to a specific MET or NOT MET assessment determination is not a complaint — it is an <a href="/appeals/">appeal</a> and is governed by a separate process.</p>
+  <p>A complaint is an expression of dissatisfaction with Init Cyber's services, conduct, or processes. A challenge to a specific MET or NOT MET assessment determination is not a complaint, it is an <a href="/appeals/">appeal</a> and is governed by a separate process.</p>
 </div>
 
 <div class="interior-section">
