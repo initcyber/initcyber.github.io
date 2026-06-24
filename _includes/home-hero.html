@@ -1,4 +1,4 @@
-<section class="home-hero">
+<section class="home-hero{% if site.hero_image %} home-hero--image{% endif %}"{% if site.hero_image %} style="background-image: url('{{ site.hero_image | relative_url }}')"{% endif %}>
   <div class="hero-geometric-accents" aria-hidden="true">
     <div class="hero-geo-rect hero-geo-rect--1"></div>
     <div class="hero-geo-rect hero-geo-rect--2"></div>
