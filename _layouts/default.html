@@ -26,6 +26,7 @@
 </head>
 
 <body class="page {% if layout.bodyClass %}{{ layout.bodyClass }}{% endif %} {% if page.bodyClass %}{{ page.bodyClass }}{% endif %}">
+  <script>if(localStorage.getItem('dark-mode')==='true')document.body.classList.add('dark-mode');</script>
   {% include main-menu-mobile.html %}
   <div id="wrapper" class="wrapper">
     {% include header.html %}

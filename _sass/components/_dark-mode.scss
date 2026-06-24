@@ -1,0 +1,230 @@
+// ── Dark Mode Toggle Button ───────────────────────────────────────────────────
+
+.dark-mode-toggle {
+  background: none;
+  border: 1px solid $line;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  flex-shrink: 0;
+
+  &:hover {
+    background: $surface-container;
+    border-color: $secondary;
+  }
+
+  .dm-icon-dark { display: none; }
+  .dm-icon-light { display: block; font-size: 20px !important; color: $on-surface-variant; }
+}
+
+// ── Dark Mode Overrides ──────────────────────────────────────────────────────
+
+.dark-mode {
+
+  // Toggle button: swap icons
+  .dark-mode-toggle {
+    border-color: rgba(255,255,255,0.2);
+
+    &:hover { background: rgba(255,255,255,0.08); border-color: $secondary-container; }
+
+    .dm-icon-dark { display: block; font-size: 20px !important; color: $secondary-container; }
+    .dm-icon-light { display: none; }
+  }
+
+  // Header
+  .site-header {
+    background: $primary;
+    border-bottom-color: rgba(255,255,255,0.08);
+  }
+
+  .nav-btn { color: rgba(255,255,255,0.7); &:hover { color: $secondary-container; } }
+  .nav-chevron { color: rgba(255,255,255,0.5); }
+
+  .dropdown-panel {
+    background: $primary-container;
+    border-color: rgba(255,255,255,0.1);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+  }
+
+  .dropdown-item {
+    color: rgba(255,255,255,0.7);
+    &:hover { background: rgba(255,255,255,0.06); color: $secondary-container; }
+  }
+
+  .btn-nav-primary {
+    background: $secondary-container;
+    color: $primary;
+    &:hover { background: lighten($secondary-container, 8%); color: $primary; }
+  }
+
+  // Mobile menu
+  .main-menu-mobile {
+    background: $primary;
+    border-top-color: rgba(255,255,255,0.1);
+  }
+
+  .mobile-menu-group {
+    a { color: rgba(255,255,255,0.7); border-bottom-color: rgba(255,255,255,0.08); &:hover { color: $secondary-container; } }
+  }
+
+  // General page backgrounds
+  body&, & body { background: #0a0f1a; color: rgba(255,255,255,0.85); }
+
+  .page-hero--light,
+  .page-hero--grid {
+    background-color: $primary;
+    border-bottom-color: rgba(255,255,255,0.08);
+
+    .page-hero-heading { color: #ffffff; }
+    .page-hero-desc { color: rgba(255,255,255,0.65); }
+    .hero-eyebrow { color: $secondary-container; }
+    .hero-eyebrow-line { background: $secondary-container; }
+    .page-hero-badge { background: $primary-container; color: $secondary-container; }
+  }
+
+  // White/light sections → dark
+  .home-approach,
+  .home-readiness,
+  .interior-content,
+  .cap-main,
+  .cap-experience,
+  .blog-layout {
+    background: #0d1321;
+    border-bottom-color: rgba(255,255,255,0.06);
+  }
+
+  // Off-white sections → darker
+  .home-cta,
+  .cap-differentiators,
+  .home-bento,
+  .blog-subscribe {
+    background: #0a0f1a;
+    border-top-color: rgba(255,255,255,0.06);
+    border-bottom-color: rgba(255,255,255,0.06);
+  }
+
+  // Dot grids
+  .home-approach-dot-grid,
+  .home-cta-dot-grid {
+    background-image: radial-gradient(circle at 2px 2px, rgba(72, 193, 255, 0.08) 1px, transparent 0);
+  }
+
+  // Section headings
+  .section-heading { color: #ffffff; }
+  .section-subheading { color: rgba(255,255,255,0.55); }
+  .section-tag { color: $secondary-container; }
+  .home-approach-divider { background: $secondary; }
+
+  // Cards
+  .approach-card,
+  .interior-card,
+  .cap-diff-card,
+  .cap-exp-item,
+  .readiness-stat-card,
+  .bento-stat,
+  .bento-monitoring,
+  .bento-careers {
+    background: $primary-container;
+    border-color: rgba(255,255,255,0.08);
+
+    &:hover { border-color: $secondary; }
+  }
+
+  .approach-card-title,
+  .cap-diff-title,
+  .interior-card h3,
+  .readiness-stat-label { color: #ffffff; }
+
+  .approach-card p,
+  .cap-diff-card p,
+  .cap-exp-item p,
+  .interior-card p { color: rgba(255,255,255,0.6); }
+
+  .readiness-stat-number { color: $secondary-container; }
+
+  // Company info panel
+  .cap-section--info {
+    background: $primary-container;
+    border-color: rgba(255,255,255,0.08);
+  }
+  .cap-info-row { border-bottom-color: rgba(255,255,255,0.08); }
+  .cap-info-value { color: #ffffff; }
+  .cap-naics-desc { color: rgba(255,255,255,0.55); }
+  .cap-section-heading { color: #ffffff; }
+
+  // Cap diff icons
+  .cap-diff-icon {
+    background: rgba(0, 101, 140, 0.3);
+  }
+
+  // Blueprint accents
+  .blueprint-accent::before { border-color: $secondary-container; }
+  .blueprint-accent::after { border-color: $secondary-container; }
+  .blueprint-border::before { border-color: $secondary; }
+  .blueprint-border::after { border-color: $secondary; }
+
+  // Content text
+  .readiness-content {
+    p { color: rgba(255,255,255,0.6); }
+    .section-heading { color: #ffffff; }
+  }
+
+  .readiness-checklist li { color: rgba(255,255,255,0.8); }
+
+  // CTA section
+  .home-cta-heading { color: #ffffff; }
+  .home-cta-sub { color: rgba(255,255,255,0.55); }
+  .home-cta-disclaimer { color: rgba(255,255,255,0.35); }
+
+  // Interior pages
+  .interior-section {
+    h2, h3 { color: #ffffff; }
+    p { color: rgba(255,255,255,0.6); }
+    p a { color: $secondary-container; &:hover { color: #ffffff; } }
+    p strong { color: #ffffff; }
+  }
+
+  .interior-list li { color: rgba(255,255,255,0.6); }
+  .interior-card-icon { background: rgba(0, 101, 140, 0.3); }
+
+  .interior-card {
+    background: $primary-container;
+    border-color: rgba(255,255,255,0.08);
+  }
+
+  // Cap list
+  .cap-list li { color: rgba(255,255,255,0.75); }
+
+  // Blog sidebar
+  .sidebar-widget {
+    background: $primary-container !important;
+    border-color: rgba(255,255,255,0.08) !important;
+
+    h4 { color: #ffffff; }
+  }
+
+  .sidebar-categories li {
+    border-bottom-color: rgba(255,255,255,0.08);
+    a { color: rgba(255,255,255,0.6); &:hover { color: $secondary-container; } }
+  }
+
+  .blog-featured h2, .blog-archive-card h3 a { color: #ffffff; }
+  .blog-featured p, .blog-archive-card p { color: rgba(255,255,255,0.55); }
+  .blog-featured-meta, .blog-card-date { color: rgba(255,255,255,0.4); }
+
+  // Line / border overrides
+  .cap-section-heading { border-bottom-color: $secondary; }
+  .interior-section h2 { border-bottom-color: $secondary; }
+
+  // Surface containers
+  .surface-container-low,
+  .readiness-stat-card {
+    background: $primary-container;
+  }
+
+  // Footer stays dark already — no changes needed
+}

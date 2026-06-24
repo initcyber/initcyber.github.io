@@ -1,3 +1,17 @@
+// Dark mode toggle
+(function() {
+  var stored = localStorage.getItem('dark-mode');
+  if (stored === 'true') document.body.classList.add('dark-mode');
+
+  var btn = document.getElementById('dark-mode-toggle');
+  if (btn) {
+    btn.addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('dark-mode', document.body.classList.contains('dark-mode'));
+    });
+  }
+})();
+
 // Mobile menu
 var body = document.querySelector('body');
 var menuTrigger = document.querySelector('#toggle-main-menu-mobile');
