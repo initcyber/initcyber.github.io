@@ -13,17 +13,20 @@ bodyClass: page-interior
 
 <div class="interior-section">
   <h3>Who May File an Appeal</h3>
-  <p>Any OSC that has entered into a signed engagement agreement with Init Cyber for a CMMC Level 2 certifying assessment and has received a final assessment report may file an appeal. An appeal is a formal request disputing specific findings — it is not a general expression of dissatisfaction with the assessment outcome.</p>
+  <p>Any OSC that has entered into a signed engagement agreement with Init Cyber for a CMMC Level 2 certifying assessment and has received a final assessment report may file an appeal. An appeal is a formal request disputing specific findings, it is not a general expression of dissatisfaction with the assessment outcome.</p>
 </div>
 
 <div class="interior-section">
   <h3>Valid Grounds for Appeal</h3>
   <p>Appeals must be grounded in one of the following three bases. Appeals submitted on any other grounds will not be accepted.</p>
-  <ul class="interior-list">
-    <li><strong>Error</strong> — A mistake by an assessor during the assessment, such as improperly interpreting assessment objectives, incorrectly recording evidence, or misapplying the CAP to a specific control.</li>
-    <li><strong>Malfeasance</strong> — Intentional conduct by Init Cyber assessment personnel contrary to CMMC standards, including conducting an assessment outside authorized methods or neglecting to complete a full evidence review.</li>
-    <li><strong>Unethical Conduct</strong> — Conduct that violates the Cyber-AB Code of Professional Conduct, such as inappropriate use of OSC data or violation of a Non-Disclosure Agreement.</li>
-  </ul>
+  <dl class="interior-defs">
+    <dt>Error</dt>
+    <dd>A mistake by an assessor during the assessment, such as improperly interpreting assessment objectives, incorrectly recording evidence, or misapplying the CAP to a specific control.</dd>
+    <dt>Malfeasance</dt>
+    <dd>Intentional conduct by Init Cyber assessment personnel contrary to CMMC standards, including conducting an assessment outside authorized methods or neglecting to complete a full evidence review.</dd>
+    <dt>Unethical Conduct</dt>
+    <dd>Conduct that violates the Cyber-AB Code of Professional Conduct, such as inappropriate use of OSC data or violation of a Non-Disclosure Agreement.</dd>
+  </dl>
   <p>Disagreement with a MET or NOT MET determination is not, by itself, a valid basis for appeal. The appeal must identify a specific error, act of malfeasance, or ethical violation.</p>
 </div>
 
