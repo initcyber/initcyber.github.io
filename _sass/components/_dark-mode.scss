@@ -72,7 +72,7 @@
   }
 
   // General page backgrounds
-  body&, & body { background: #0a0f1a; color: rgba(255,255,255,0.85); }
+  &, & body { background: #0a0f1a; color: rgba(255,255,255,0.85); }
 
   .page-hero--light,
   .page-hero--grid {
