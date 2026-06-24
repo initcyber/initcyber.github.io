@@ -1,5 +1,5 @@
 baseurl: '/'
-permalink: pretty
+permalink: /:year/:month/:day/:title/
 title: 'Init Cyber - CMMC Compliance Made Simple'
 description: 'CMMC consulting and compliance services for defense contractors. C3PAO certified assessments and expertise.'
 

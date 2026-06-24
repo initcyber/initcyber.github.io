@@ -49,7 +49,7 @@ bodyClass: page-interior
   <ul class="interior-list">
     <li>Acknowledge receipt of the appeal in writing and confirm next steps</li>
     <li>Record the appeal in CMMC eMASS</li>
-    <li>Assign an independent Appeal QA Reviewer — a current CCA or LCCA who was not a member of the original assessment team and did not serve as QA Reviewer on the original assessment</li>
+    <li>Assign an independent Appeal QA Reviewer: a current CCA or LCCA who was not a member of the original assessment team and did not serve as QA Reviewer on the original assessment</li>
     <li>Conduct a reevaluation of the disputed controls, which may include review of previously hashed evidence, consultation with the original assessment team, and communication with OSC personnel</li>
     <li>Provide at least one interim status update if the reevaluation is expected to extend beyond 10 calendar days</li>
     <li>Produce and deliver a formal written decision stating the outcome and rationale</li>
