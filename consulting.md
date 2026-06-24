@@ -19,7 +19,7 @@ bodyClass: page-interior
   </div>
   <div class="interior-card">
     <div class="interior-card-icon"><span class="material-symbols-outlined">description</span></div>
-    <h3>SSP &amp; Documentation Authoring</h3>
+    <h3>SSP &amp; Documentation Guidance</h3>
     <p>Comprehensive System Security Plans, POA&amp;Ms, incident response plans, and security policies and procedures that accurately reflect your environment and satisfy CMMC domain requirements — built for assessor scrutiny, not just compliance theater.</p>
   </div>
   <div class="interior-card">
@@ -42,9 +42,10 @@ bodyClass: page-interior
 <div class="interior-section" style="margin-top: 48px;">
   <h2>Why Init Cyber</h2>
   <ul class="interior-list">
-    <li>Top-Secret cleared leadership with 10+ years of DoD cybersecurity experience</li>
-    <li>CISSP, PMP, and MBA credentials ensure projects deliver on scope, time, and budget</li>
-    <li>100% audit success rate across all client engagements</li>
+    <li>Company leadership with 10+ years of DoD and Federal cybersecurity experience</li>
+    <li>Decades of combined experience across DoD cybersecurity, federal compliance, and defense contracting. We've seen what works and what fails under scrutiny.</li>
+    <li>Hands-on technical background across security architecture, cloud platforms, and compliance tooling — we speak both the policy language and the engineering language fluently.</li>
+    <li>We guide you every step of the way, from greenfield to certification ready.</li>
   </ul>
   <p style="margin-top: 24px;"><a href="/contact/">Schedule a consultation</a> to discuss your organization's cybersecurity needs.</p>
 </div>
