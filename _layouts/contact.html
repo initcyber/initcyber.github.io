@@ -25,47 +25,45 @@ bodyClass: "page-contact"
           <div class="discovery-dot-grid" aria-hidden="true"></div>
           <h2 class="section-heading" style="margin-bottom:32px;">Discovery Request</h2>
           <form class="discovery-form" id="discovery-form" action="https://formspree.io/f/xjvnyqwe" method="post">
-            <input type="hidden" name="_subject" value="New Discovery Request — Init Cyber" />
+            <input type="hidden" name="_subject" value="New Discovery Request - Init Cyber" />
+            <div class="form-field">
+              <label class="form-label">Company Name</label>
+              <input class="form-input" type="text" name="company" placeholder="Enter full legal name" required />
+            </div>
             <div class="form-row-2">
-              <div class="form-field">
-                <label class="form-label">Company Name</label>
-                <input class="form-input" type="text" name="company" placeholder="Enter full legal name" required />
-              </div>
               <div class="form-field">
                 <label class="form-label">Contact Email</label>
                 <input class="form-input" type="email" name="email" placeholder="work@company.com" required />
               </div>
+              <div class="form-field">
+                <label class="form-label">Contact Phone</label>
+                <input class="form-input" type="tel" name="phone" placeholder="(555) 000-0000" />
+              </div>
             </div>
             <div class="form-field">
-              <label class="form-label">CUI Handling Status</label>
-              <select class="form-input form-select" name="cui_status">
-                <option value="" disabled selected>Select handling status</option>
-                <option value="Currently handling CUI">Currently handling CUI</option>
-                <option value="Preparing to handle CUI">Preparing to handle CUI</option>
-                <option value="Not handling CUI">Not handling CUI</option>
-                <option value="Unknown">Unknown</option>
-              </select>
-            </div>
-            <div class="form-field">
-              <label class="form-label">Target Compliance Level</label>
+              <label class="form-label">How Can We Help?</label>
               <div class="form-radio-group">
                 <label class="form-radio-option">
-                  <input type="radio" name="compliance_level" value="Level 1 (Foundational)" />
-                  <span>Level 1 (Foundational)</span>
+                  <input type="radio" name="service_type" value="Consulting / Advisory / Readiness" />
+                  <span>Consulting / Advisory / Readiness</span>
                 </label>
                 <label class="form-radio-option">
-                  <input type="radio" name="compliance_level" value="Level 2 (Advanced)" checked />
-                  <span><strong>Level 2 (Advanced)</strong></span>
+                  <input type="radio" name="service_type" value="Mock Assessment" />
+                  <span>Mock Assessment</span>
                 </label>
                 <label class="form-radio-option">
-                  <input type="radio" name="compliance_level" value="Level 3 (Expert)" />
-                  <span>Level 3 (Expert)</span>
+                  <input type="radio" name="service_type" value="CMMC Level 2 Assessment" />
+                  <span>CMMC Level 2 Assessment</span>
+                </label>
+                <label class="form-radio-option">
+                  <input type="radio" name="service_type" value="Other - Discuss during call" />
+                  <span>Other - Discuss during call</span>
                 </label>
               </div>
             </div>
             <div class="form-field">
-              <label class="form-label">Current Security Posture</label>
-              <textarea class="form-input form-textarea" name="security_posture" rows="4" placeholder="Briefly describe your current NIST 800-171 self-assessment score or current security challenges..."></textarea>
+              <label class="form-label">Comments</label>
+              <textarea class="form-input form-textarea" name="comments" rows="4" placeholder="Anything you'd like us to know before we connect..."></textarea>
             </div>
             <div id="form-status" style="display:none;padding:12px 16px;margin-bottom:16px;font-size:14px;font-weight:600;"></div>
             <button class="btn-form-submit" type="submit" id="form-submit-btn">
@@ -81,7 +79,7 @@ bodyClass: "page-contact"
         <div class="discovery-trust-card">
           <span class="material-symbols-outlined discovery-trust-icon">shield_lock</span>
           <h3 class="discovery-trust-title">Cyber-AB Authorized C3PAO</h3>
-          <p>Init Cyber is a Cyber-AB authorized Third-Party Assessment Organization. Whether you need readiness consulting or an official CMMC Level 2 certification assessment, you're working directly with credentialed personnel — not a reseller or subcontractor.</p>
+          <p>Init Cyber is a Cyber-AB authorized Third-Party Assessment Organization. Whether you need readiness consulting or an official CMMC Level 2 certification assessment, you're working directly with credentialed personnel, not a reseller or subcontractor.</p>
           <div class="discovery-trust-badge">
             <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;font-size:18px;">verified_user</span>
             <span>AUTHORIZED C3PAO</span>
@@ -108,7 +106,7 @@ bodyClass: "page-contact"
             <div class="discovery-step-num">03</div>
             <div>
               <h5 class="discovery-step-title">Tailored Proposal</h5>
-              <p>You receive a clear proposal outlining the recommended engagement, scope, and next steps — specific to your organization.</p>
+              <p>You receive a clear proposal outlining the recommended engagement, scope, and next steps specific to your organization.</p>
             </div>
           </div>
         </div>
@@ -128,7 +126,6 @@ bodyClass: "page-contact"
           <div class="contact-location-item">
             <span class="material-symbols-outlined contact-location-icon">location_on</span>
             <div>
-              <p><strong>Washington D.C. Regional Office</strong></p>
               <p>{{ site.data.contact.address }}</p>
             </div>
           </div>
@@ -142,9 +139,12 @@ bodyClass: "page-contact"
           </div>
         </div>
       </div>
-      <div class="contact-map-placeholder">
-        <span class="material-symbols-outlined contact-map-icon">map</span>
-        <p>{{ site.data.contact.address }}</p>
+      <div class="contact-map-placeholder" style="padding:0;overflow:hidden;min-height:280px;">
+        <iframe
+          src="https://maps.google.com/maps?q=225+Reformation+Pkwy+Ste+200,+Canton,+GA+30114&output=embed"
+          width="100%" height="100%" style="border:0;min-height:280px;display:block;"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Init Cyber office location"></iframe>
       </div>
     </div>
   </div>
