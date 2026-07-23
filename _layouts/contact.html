@@ -24,49 +24,51 @@ bodyClass: "page-contact"
         <div class="discovery-form-card">
           <div class="discovery-dot-grid" aria-hidden="true"></div>
           <h2 class="section-heading" style="margin-bottom:32px;">Discovery Request</h2>
-          <form class="discovery-form" id="discovery-form" action="#" method="post">
+          <form class="discovery-form" id="discovery-form" action="https://formspree.io/f/xjvnyqwe" method="post">
+            <input type="hidden" name="_subject" value="New Discovery Request — Init Cyber" />
             <div class="form-row-2">
               <div class="form-field">
                 <label class="form-label">Company Name</label>
-                <input class="form-input" type="text" placeholder="Enter full legal name" />
+                <input class="form-input" type="text" name="company" placeholder="Enter full legal name" required />
               </div>
               <div class="form-field">
                 <label class="form-label">Contact Email</label>
-                <input class="form-input" type="email" placeholder="work@company.com" />
+                <input class="form-input" type="email" name="email" placeholder="work@company.com" required />
               </div>
             </div>
             <div class="form-field">
               <label class="form-label">CUI Handling Status</label>
-              <select class="form-input form-select">
+              <select class="form-input form-select" name="cui_status">
                 <option value="" disabled selected>Select handling status</option>
-                <option value="current">Currently handling CUI</option>
-                <option value="preparing">Preparing to handle CUI</option>
-                <option value="none">Not handling CUI</option>
-                <option value="unknown">Unknown</option>
+                <option value="Currently handling CUI">Currently handling CUI</option>
+                <option value="Preparing to handle CUI">Preparing to handle CUI</option>
+                <option value="Not handling CUI">Not handling CUI</option>
+                <option value="Unknown">Unknown</option>
               </select>
             </div>
             <div class="form-field">
               <label class="form-label">Target Compliance Level</label>
               <div class="form-radio-group">
                 <label class="form-radio-option">
-                  <input type="radio" name="level" value="1" />
+                  <input type="radio" name="compliance_level" value="Level 1 (Foundational)" />
                   <span>Level 1 (Foundational)</span>
                 </label>
                 <label class="form-radio-option">
-                  <input type="radio" name="level" value="2" checked />
+                  <input type="radio" name="compliance_level" value="Level 2 (Advanced)" checked />
                   <span><strong>Level 2 (Advanced)</strong></span>
                 </label>
                 <label class="form-radio-option">
-                  <input type="radio" name="level" value="3" />
+                  <input type="radio" name="compliance_level" value="Level 3 (Expert)" />
                   <span>Level 3 (Expert)</span>
                 </label>
               </div>
             </div>
             <div class="form-field">
               <label class="form-label">Current Security Posture</label>
-              <textarea class="form-input form-textarea" rows="4" placeholder="Briefly describe your current NIST 800-171 self-assessment score or current security challenges..."></textarea>
+              <textarea class="form-input form-textarea" name="security_posture" rows="4" placeholder="Briefly describe your current NIST 800-171 self-assessment score or current security challenges..."></textarea>
             </div>
-            <button class="btn-form-submit" type="submit">
+            <div id="form-status" style="display:none;padding:12px 16px;margin-bottom:16px;font-size:14px;font-weight:600;"></div>
+            <button class="btn-form-submit" type="submit" id="form-submit-btn">
               SUBMIT DISCOVERY REQUEST
               <span class="material-symbols-outlined" style="font-size:18px;vertical-align:middle;">arrow_forward</span>
             </button>
@@ -78,11 +80,11 @@ bodyClass: "page-contact"
       <div class="discovery-info-col">
         <div class="discovery-trust-card">
           <span class="material-symbols-outlined discovery-trust-icon">shield_lock</span>
-          <h3 class="discovery-trust-title">CMMC Licensed Provider</h3>
-          <p>As a vetted provider, our discovery process adheres strictly to DoD-sanctioned assessment methodologies. All data submitted via this form is encrypted and stored on US-based FedRAMP Moderate-compliant infrastructure.</p>
+          <h3 class="discovery-trust-title">Cyber-AB Authorized C3PAO</h3>
+          <p>Init Cyber is a Cyber-AB authorized Third-Party Assessment Organization. Whether you need readiness consulting or an official CMMC Level 2 certification assessment, you're working directly with credentialed personnel — not a reseller or subcontractor.</p>
           <div class="discovery-trust-badge">
             <span class="material-symbols-outlined" style="font-variation-settings:'FILL' 1;font-size:18px;">verified_user</span>
-            <span>SECURE DATA SUBMISSION</span>
+            <span>AUTHORIZED C3PAO</span>
           </div>
         </div>
 
@@ -91,34 +93,23 @@ bodyClass: "page-contact"
           <div class="discovery-step">
             <div class="discovery-step-num">01</div>
             <div>
-              <h5 class="discovery-step-title">Initial Audit</h5>
-              <p>Our analysts review your profile to determine the necessary assessment scope based on your CUI flow.</p>
+              <h5 class="discovery-step-title">We Review Your Request</h5>
+              <p>We review the information you submit to understand your organization, your CUI environment, and what you're trying to accomplish.</p>
             </div>
           </div>
           <div class="discovery-step">
             <div class="discovery-step-num">02</div>
             <div>
-              <h5 class="discovery-step-title">Discovery Call</h5>
-              <p>A technical session to deep-dive into your existing SSP, POAMs, and network architecture.</p>
+              <h5 class="discovery-step-title">Scoping Conversation</h5>
+              <p>A focused call to clarify your timeline, current posture, and whether consulting, a mock assessment, or a formal certification engagement fits your situation.</p>
             </div>
           </div>
           <div class="discovery-step">
             <div class="discovery-step-num">03</div>
             <div>
-              <h5 class="discovery-step-title">Gap Report</h5>
-              <p>You receive a formal report identifying non-compliant controls and a roadmap for Level 2 remediation.</p>
+              <h5 class="discovery-step-title">Tailored Proposal</h5>
+              <p>You receive a clear proposal outlining the recommended engagement, scope, and next steps — specific to your organization.</p>
             </div>
-          </div>
-        </div>
-
-        <div class="discovery-stat-cards">
-          <div class="discovery-stat-card bracket-accent">
-            <div class="discovery-stat-number">98%</div>
-            <div class="discovery-stat-label">First-Time Pass Rate</div>
-          </div>
-          <div class="discovery-stat-card bracket-accent">
-            <div class="discovery-stat-number">500+</div>
-            <div class="discovery-stat-label">CMMC Audits</div>
           </div>
         </div>
       </div>
@@ -162,18 +153,39 @@ bodyClass: "page-contact"
 <script>
   document.getElementById('discovery-form').addEventListener('submit', function(e) {
     e.preventDefault();
-    var btn = e.target.querySelector('button[type=submit]');
+    var form = e.target;
+    var btn = document.getElementById('form-submit-btn');
+    var status = document.getElementById('form-status');
+
     btn.disabled = true;
-    btn.textContent = 'PROCESSING...';
-    setTimeout(function() {
-      btn.textContent = 'REQUEST TRANSMITTED';
-      btn.style.background = '#15803d';
-      setTimeout(function() {
-        btn.disabled = false;
+    btn.textContent = 'SENDING...';
+    status.style.display = 'none';
+
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(function(response) {
+      if (response.ok) {
+        status.style.display = 'block';
+        status.style.background = '#0f3d1e';
+        status.style.color = '#4ade80';
+        status.style.border = '1px solid #166534';
+        status.textContent = 'Request received. We\'ll be in touch shortly.';
+        form.reset();
         btn.textContent = 'SUBMIT DISCOVERY REQUEST';
-        btn.style.background = '';
-        e.target.reset();
-      }, 3000);
-    }, 1500);
+        btn.disabled = false;
+      } else {
+        return response.json().then(function(data) { throw data; });
+      }
+    }).catch(function(err) {
+      status.style.display = 'block';
+      status.style.background = '#3d0f0f';
+      status.style.color = '#f87171';
+      status.style.border = '1px solid #991b1b';
+      status.textContent = 'Something went wrong. Please email us directly at ' + '{{ site.data.contact.email }}' + '.';
+      btn.textContent = 'SUBMIT DISCOVERY REQUEST';
+      btn.disabled = false;
+    });
   });
 </script>
