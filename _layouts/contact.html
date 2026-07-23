@@ -7,9 +7,9 @@ bodyClass: "page-contact"
 <section class="page-hero page-hero--dark">
   <div class="container">
     <div class="page-hero-content">
-      <span class="hero-eyebrow hero-eyebrow--light">Discovery Phase</span>
-      <h1 class="page-hero-heading" style="color:#ffffff;">Secure Your Standing in the Defense Industrial Base</h1>
-      <p class="page-hero-desc" style="color:rgba(255,255,255,0.75);">Navigate CMMC 2.0 with precision. Our discovery process identifies gaps in your current infrastructure and establishes a clear path to certification.</p>
+      <span class="hero-eyebrow hero-eyebrow--light">Contact Us</span>
+      <h1 class="page-hero-heading" style="color:#ffffff;">Let's Talk</h1>
+      <p class="page-hero-desc" style="color:rgba(255,255,255,0.75);">Tell us about your organization and what you're working toward. We'll follow up to schedule a call.</p>
     </div>
   </div>
 </section>
@@ -23,16 +23,22 @@ bodyClass: "page-contact"
       <div class="discovery-form-col">
         <div class="discovery-form-card">
           <div class="discovery-dot-grid" aria-hidden="true"></div>
-          <h2 class="section-heading" style="margin-bottom:32px;">Discovery Request</h2>
+          <h2 class="section-heading" style="margin-bottom:32px;">Contact Us</h2>
           <form class="discovery-form" id="discovery-form" action="https://formspree.io/f/xjvnyqwe" method="post">
-            <input type="hidden" name="_subject" value="New Discovery Request - Init Cyber" />
-            <div class="form-field">
-              <label class="form-label">Company Name</label>
-              <input class="form-input" type="text" name="company" placeholder="Enter full legal name" required />
+            <input type="hidden" name="_subject" value="New Contact Form Submission - Init Cyber" />
+            <div class="form-row-2">
+              <div class="form-field">
+                <label class="form-label">Contact Name *</label>
+                <input class="form-input" type="text" name="name" placeholder="First Last" required />
+              </div>
+              <div class="form-field">
+                <label class="form-label">Company Name *</label>
+                <input class="form-input" type="text" name="company" placeholder="Enter full legal name" required />
+              </div>
             </div>
             <div class="form-row-2">
               <div class="form-field">
-                <label class="form-label">Contact Email</label>
+                <label class="form-label">Contact Email *</label>
                 <input class="form-input" type="email" name="email" placeholder="work@company.com" required />
               </div>
               <div class="form-field">
@@ -55,10 +61,6 @@ bodyClass: "page-contact"
                   <input type="radio" name="service_type" value="CMMC Level 2 Assessment" />
                   <span>CMMC Level 2 Assessment</span>
                 </label>
-                <label class="form-radio-option">
-                  <input type="radio" name="service_type" value="Other - Discuss during call" />
-                  <span>Other - Discuss during call</span>
-                </label>
               </div>
             </div>
             <div class="form-field">
@@ -67,7 +69,7 @@ bodyClass: "page-contact"
             </div>
             <div id="form-status" style="display:none;padding:12px 16px;margin-bottom:16px;font-size:14px;font-weight:600;"></div>
             <button class="btn-form-submit" type="submit" id="form-submit-btn">
-              SUBMIT DISCOVERY REQUEST
+              SEND MESSAGE
               <span class="material-symbols-outlined" style="font-size:18px;vertical-align:middle;">arrow_forward</span>
             </button>
           </form>
@@ -121,7 +123,7 @@ bodyClass: "page-contact"
   <div class="container">
     <div class="contact-location-grid">
       <div>
-        <h2 class="section-heading">Headquarters</h2>
+        <h2 class="section-heading">Init Cyber Headquarters</h2>
         <div class="contact-location-items">
           <div class="contact-location-item">
             <span class="material-symbols-outlined contact-location-icon">location_on</span>
@@ -173,7 +175,7 @@ bodyClass: "page-contact"
         status.style.border = '1px solid #166534';
         status.textContent = 'Request received. We\'ll be in touch shortly.';
         form.reset();
-        btn.textContent = 'SUBMIT DISCOVERY REQUEST';
+        btn.textContent = 'SEND MESSAGE';
         btn.disabled = false;
       } else {
         return response.json().then(function(data) { throw data; });
@@ -184,7 +186,7 @@ bodyClass: "page-contact"
       status.style.color = '#f87171';
       status.style.border = '1px solid #991b1b';
       status.textContent = 'Something went wrong. Please email us directly at ' + '{{ site.data.contact.email }}' + '.';
-      btn.textContent = 'SUBMIT DISCOVERY REQUEST';
+      btn.textContent = 'SEND MESSAGE';
       btn.disabled = false;
     });
   });
