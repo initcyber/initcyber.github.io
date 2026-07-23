@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Init Cyber Is Now a Fully Authorized C3PAO"
+image: "images/posts/07-23-2026/c3pao_badge.png"
 date: 2026-07-23
 categories: ["CMMC Fundamentals", "Assessment Prep"]
 ---
